@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="vue,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前言本文以前端面试官的角度出发，对 Vue 框架中一些重要的特性、框架的原理以问题的形式进行整理汇总，意在帮助作者及读者自测下 Vue 掌握的程度。 1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue入门到精通">
+<meta property="og:url" content="http://zouyu01sz.github.io/2019/08/23/Vue入门到精通/index.html">
+<meta property="og:site_name" content="Learn个人博客-分享">
+<meta property="og:description" content="前言本文以前端面试官的角度出发，对 Vue 框架中一些重要的特性、框架的原理以问题的形式进行整理汇总，意在帮助作者及读者自测下 Vue 掌握的程度。 1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://zouyu01sz.github.io/images/55ffj6k34ddfg.png">
+<meta property="og:updated_time" content="2019-08-23T08:56:22.261Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vue入门到精通">
+<meta name="twitter:description" content="前言本文以前端面试官的角度出发，对 Vue 框架中一些重要的特性、框架的原理以问题的形式进行整理汇总，意在帮助作者及读者自测下 Vue 掌握的程度。 1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行">
+<meta name="twitter:image" content="http://zouyu01sz.github.io/images/55ffj6k34ddfg.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zouyu01sz.github.io/2019/08/23/Vue入门到精通/">
+
+
+
+
+
+  <title>Vue入门到精通 | Learn个人博客-分享</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+      <a href="https://github.com/zouyu01-sz/zouyu01-sz.github.io">     
+        <img style="position: absolute; top: 0;
+        right: 0; border: 0;" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" alt="Fork me on GitHub" data-canonical->
+      </a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Learn个人博客-分享</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-首页">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-标签">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-分类">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-日志">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            日志
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zouyu01sz.github.io/2019/08/23/Vue入门到精通/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Learn">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Learn个人博客-分享">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Vue入门到精通</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-23T15:55:52+08:00">
+                2019-08-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Vue/" itemprop="url" rel="index">
+                    <span itemprop="name">Vue</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/08/23/Vue入门到精通/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/08/23/Vue入门到精通/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/08/23/Vue入门到精通/" class="leancloud_visitors" data-flag-title="Vue入门到精通">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文以前端面试官的角度出发，对 Vue 框架中一些重要的特性、框架的原理以问题的形式进行整理汇总，意在帮助作者及读者自测下 Vue 掌握的程度。</p>
+<h4 id="1、说说你对-SPA-单页面的理解，它的优缺点分别是什么？"><a href="#1、说说你对-SPA-单页面的理解，它的优缺点分别是什么？" class="headerlink" title="1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？"></a>1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？</h4><p>SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行页面的重新加载或跳转；取而代之的是利用路由机制实现 HTML 内容的变换，UI 与用户的交互，避免页面的重新加载。</p>
+<a id="more"></a>
+
+<h5 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h5><ol>
+<li>用户体验好、快，内容的改变不需要重新加载整个页面，避免了不必要的跳转和重复渲染；</li>
+<li>基于上面一点，SPA 相对对服务器压力小；</li>
+<li>前后端职责分离，架构清晰，前端进行交互逻辑，后端负责数据处理；</li>
+</ol>
+<h5 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h5><ol>
+<li>初次加载耗时多：为实现单页 Web 应用功能及显示效果，需要在加载页面的时候将 JavaScript、CSS 统一加载，部分页面按需加载；</li>
+<li>前进后退路由管理：由于单页应用在一个页面中显示所有的内容，所以不能使用浏览器的前进后退功能，所有的页面切换需要自己建立堆栈管理；</li>
+<li>SEO 难度较大：由于所有的内容都在一个页面中动态替换显示，所以在 SEO 上其有着天然的弱势。</li>
+</ol>
+<h4 id="2、v-show-与-v-if-有什么区别？"><a href="#2、v-show-与-v-if-有什么区别？" class="headerlink" title="2、v-show 与 v-if 有什么区别？"></a>2、v-show 与 v-if 有什么区别？</h4><p>v-if 是真正的条件渲染，因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建；也是惰性的：如果在初始渲染时条件为假，则什么也不做——直到条件第一次变为真时，才会开始渲染条件块。</p>
+<p>v-show 就简单得多——不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS 的 “display” 属性进行切换。</p>
+<p>所以，v-if 适用于在运行时很少改变条件，不需要频繁切换条件的场景；v-show 则适用于需要非常频繁切换条件的场景。</p>
+<h4 id="3、Class-与-Style-如何动态绑定？"><a href="#3、Class-与-Style-如何动态绑定？" class="headerlink" title="3、Class 与 Style 如何动态绑定？"></a>3、Class 与 Style 如何动态绑定？</h4><ol>
+<li>Class 可以通过对象语法和数组语法进行动态绑定：</li>
+</ol>
+<ul>
+<li><p>对象语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div :class=&quot;&#123; active: isActive, &apos;text-danger&apos;: hasError &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">data: &#123;</span><br><span class="line">  isActive: true,</span><br><span class="line">  hasError: false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数组语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div :class=&quot;[isActive ? activeClass : &apos;&apos;, errorClass]&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">data: &#123;</span><br><span class="line">  activeClass: &apos;active&apos;,</span><br><span class="line">  errorClass: &apos;text-danger&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="2">
+<li>Style 也可以通过对象语法和数组语法进行动态绑定：</li>
+</ol>
+<ul>
+<li>对象语法：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div :style=&quot;&#123; color: activeColor, fontSize: fontSize + &apos;px&apos; &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">data: &#123;</span><br><span class="line">  activeColor: &apos;red&apos;,</span><br><span class="line">  fontSize: 30</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>数组语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div :style=&quot;[styleColor, styleSize]&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">data: &#123;</span><br><span class="line">  styleColor: &#123;</span><br><span class="line">     color: &apos;red&apos;</span><br><span class="line">   &#125;,</span><br><span class="line">  styleSize:&#123;</span><br><span class="line">     fontSize:&apos;23px&apos;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4、怎样理解-Vue-的单向数据流？"><a href="#4、怎样理解-Vue-的单向数据流？" class="headerlink" title="4、怎样理解 Vue 的单向数据流？"></a>4、怎样理解 Vue 的单向数据流？</h4><p>所有的 prop 都使得其父子 prop 之间形成了一个<strong>单向下行绑定</strong> ：父级 prop 的更新会向下流动到子组件中，但是反过来则不行。这样会防止从子组件意外改变父级组件的状态，从而导致你的应用的数据流向难以理解。</p>
+<p>额外的，每次父级组件发生更新时，子组件中所有的 prop 都将会刷新为最新的值。这意味着你不应该在一个子组件内部改变 prop。如果你这样做了，Vue 会在浏览器的控制台中发出警告。子组件想修改时，只能通过 <strong>$emit</strong>派发一个自定义事件，父组件接收到后，由父组件修改。</p>
+<ul>
+<li><p>这个 prop 用来传递一个初始值；这个子组件接下来希望将其作为一个本地的 prop 数据来使用。 在这种情况下，最好定义一个本地的 data 属性并将这个 prop 用作其初始值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">props: [&apos;initialCounter&apos;],</span><br><span class="line">data: function () &#123;</span><br><span class="line">  return &#123;</span><br><span class="line">    counter: this.initialCounter</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>这个 prop 以一种原始的值传入且需要进行转换。 在这种情况下，最好使用这个 prop 的值来定义一个计算属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">props: [&apos;size&apos;],</span><br><span class="line">computed: &#123;</span><br><span class="line">  normalizedSize: function () &#123;</span><br><span class="line">    return this.size.trim().toLowerCase()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="5、computed-和-watch-的区别和运用的场景？"><a href="#5、computed-和-watch-的区别和运用的场景？" class="headerlink" title="5、computed 和 watch 的区别和运用的场景？"></a>5、computed 和 watch 的区别和运用的场景？</h4><p>computed： 是计算属性，依赖其它属性值，并且 computed 的值有缓存，只有它依赖的属性值发生改变，下一次获取 computed 的值时才会重新计算 computed 的值；</p>
+<p>watch： 更多的是「观察」的作用，类似于某些数据的监听回调 ，每当监听的数据变化时都会执行回调进行后续操作；</p>
+<h5 id="运用场景："><a href="#运用场景：" class="headerlink" title="运用场景："></a>运用场景：</h5><ul>
+<li><p>当我们需要进行数值计算，并且依赖于其它数据时，应该使用 computed，因为可以利用 computed 的缓存特性，避免每次获取值时，都要重新计算；</p>
+</li>
+<li><p>当我们需要在数据变化时执行异步或开销较大的操作时，应该使用 watch，使用 watch 选项允许我们执行异步操作 ( 访问一个 API )，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的。</p>
+</li>
+</ul>
+<h4 id="6、直接给一个数组项赋值，Vue-能检测到变化吗？"><a href="#6、直接给一个数组项赋值，Vue-能检测到变化吗？" class="headerlink" title="6、直接给一个数组项赋值，Vue 能检测到变化吗？"></a>6、直接给一个数组项赋值，Vue 能检测到变化吗？</h4><p>由于 JavaScript 的限制，Vue 不能检测到以下数组的变动</p>
+<h4 id="7、谈谈你对-Vue-生命周期的理解？"><a href="#7、谈谈你对-Vue-生命周期的理解？" class="headerlink" title="7、谈谈你对 Vue 生命周期的理解？"></a>7、谈谈你对 Vue 生命周期的理解？</h4><p>1、creating 状态–vue 实例被创建的过程<br>2、mounting 状态–挂到到真实的 DOM 节点<br>3、updating 状态–如果 data 中的数据改变就会触发对应组件的重新渲染<br>4、destroying 状态–实例销毁<br>| 方法名 | 状态 | 含义 |<br>| —— | —— | —— |<br>| beforeCreate | creating 状态 | 实例创建之前调用 |<br>|created|    creating 状态|    实例创建成功，此时 data 中的数据显示出来了|<br>|beforeMount    |mounting 状态    |数据中的 data 在模版中先占一个位置|<br>|mounted    |mounting 状态    |模版中的 data 数据直接显示出来了|<br>|beforeUpdate|    updating 状态|    当 data 数据发生变化调用，发生在虚拟 DOM 重新渲染和打补丁之前|<br>|updated|    updating 状态|    数据更改导致的虚拟 DOM 重新渲染和打补丁|<br>|beforeDestroy|    destroying 状态    |在 vue 实例销毁之前调用，此时实例任然可用|<br>|destroyed|    destroying 状态|    在 vue 实例销毁之后调用|</p>
+<h4 id="8、在哪个生命周期内调用异步请求？"><a href="#8、在哪个生命周期内调用异步请求？" class="headerlink" title="8、在哪个生命周期内调用异步请求？"></a>8、在哪个生命周期内调用异步请求？</h4><p>可以在钩子函数 created、beforeMount、mounted 中进行调用，因为在这三个钩子函数中，data 已经创建，可以将服务端端返回的数据进行赋值。但是本人推荐在 created 钩子函数中调用异步请求，因为在 created 钩子函数中调用异步请求有以下优点：</p>
+<ol>
+<li>能更快获取到服务端数据，减少页面 loading 时间；</li>
+<li>ssr 不支持 beforeMount 、mounted 钩子函数，所以放在 created 中有助于一致性</li>
+</ol>
+<h4 id="9、在什么阶段才能访问操作DOM？"><a href="#9、在什么阶段才能访问操作DOM？" class="headerlink" title="9、在什么阶段才能访问操作DOM？"></a>9、在什么阶段才能访问操作DOM？</h4><p>mounted </p>
+<h4 id="10、父组件可以监听到子组件的生命周期吗？"><a href="#10、父组件可以监听到子组件的生命周期吗？" class="headerlink" title="10、父组件可以监听到子组件的生命周期吗？"></a>10、父组件可以监听到子组件的生命周期吗？</h4><p>比如有父组件 Parent 和子组件 Child，如果父组件监听到子组件挂载 mounted 就做一些逻辑处理，可以通过以下写法实现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// Parent.vue</span><br><span class="line">&lt;Child @mounted=&quot;doSomething&quot;/&gt;</span><br><span class="line">    </span><br><span class="line">// Child.vue</span><br><span class="line">mounted() &#123;</span><br><span class="line">  this.$emit(&quot;mounted&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上需要手动通过 $emit 触发父组件的事件，更简单的方式可以在父组件引用子组件时通过 @hook 来监听即可，如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//  Parent.vue</span><br><span class="line">&lt;Child @hook:mounted=&quot;doSomething&quot; &gt;&lt;/Child&gt;</span><br><span class="line"></span><br><span class="line">doSomething() &#123;</span><br><span class="line">   console.log(&apos;父组件监听到 mounted 钩子函数 ...&apos;);</span><br><span class="line">&#125;,</span><br><span class="line">    </span><br><span class="line">//  Child.vue</span><br><span class="line">mounted()&#123;</span><br><span class="line">   console.log(&apos;子组件触发 mounted 钩子函数 ...&apos;);</span><br><span class="line">&#125;,    </span><br><span class="line">    </span><br><span class="line">// 以上输出顺序为：</span><br><span class="line">// 子组件触发 mounted 钩子函数 ...</span><br><span class="line">// 父组件监听到 mounted 钩子函数 ...</span><br></pre></td></tr></table></figure>
+
+<p>当然 @hook 方法不仅仅是可以监听 mounted，其它的生命周期事件，例如：created，updated 等都可以监听。</p>
+<h4 id="11、谈谈你对-keep-alive-的了解？"><a href="#11、谈谈你对-keep-alive-的了解？" class="headerlink" title="11、谈谈你对 keep-alive 的了解？"></a>11、谈谈你对 keep-alive 的了解？</h4><p>keep-alive 是 Vue 内置的一个组件，可以使被包含的组件保留状态，避免重新渲染 ，其有以下特性：</p>
+<ul>
+<li>一般结合路由和动态组件一起使用，用于缓存组件；</li>
+<li>提供 include 和 exclude 属性，两者都支持字符串或正则表达式， include 表示只有名称匹配的组件会被缓存，exclude 表示任何名称匹配的组件都不会被缓存 ，其中 exclude 的优先级比 include 高；</li>
+<li>对应两个钩子函数 activated 和 deactivated ，当组件被激活时，触发钩子函数 activated，当组件被移除时，触发钩子函数 deactivated。</li>
+</ul>
+<h4 id="12、组件中-data-为什么是一个函数？"><a href="#12、组件中-data-为什么是一个函数？" class="headerlink" title="12、组件中 data 为什么是一个函数？"></a>12、组件中 data 为什么是一个函数？</h4><p>为什么组件中的 data 必须是一个函数，然后 return 一个对象，而 new Vue 实例里，data 可以直接是一个对象？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// data</span><br><span class="line">data() &#123;</span><br><span class="line">  return &#123;</span><br><span class="line">	message: &quot;子组件&quot;,</span><br><span class="line">	childName:this.name</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// new Vue</span><br><span class="line">new Vue(&#123;</span><br><span class="line">  el: &apos;#app&apos;,</span><br><span class="line">  router,</span><br><span class="line">  template: &apos;&lt;App/&gt;&apos;,</span><br><span class="line">  components: &#123;App&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>因为组件是用来复用的，且 JS 里对象是引用关系，如果组件中 data 是一个对象，那么这样作用域没有隔离，子组件中的 data 属性值会相互影响，如果组件中 data 选项是一个函数，那么每个实例可以维护一份被返回对象的独立的拷贝，组件实例之间的 data 属性值不会互相影响；而 new Vue 的实例，是不会被复用的，因此不存在引用对象的问题。</p>
+<h4 id="13、v-model-的原理？"><a href="#13、v-model-的原理？" class="headerlink" title="13、v-model 的原理？"></a>13、v-model 的原理？</h4><p>我们在 vue 项目中主要使用 v-model 指令在表单 input、textarea、select 等元素上创建双向数据绑定，我们知道 v-model 本质上不过是语法糖，v-model 在内部为不同的输入元素使用不同的属性并抛出不同的事件：</p>
+<ul>
+<li>text 和 textarea 元素使用 value 属性和 input 事件；</li>
+<li>checkbox 和 radio 使用 checked 属性和 change 事件；</li>
+<li>select 字段将 value 作为 prop 并将 change 作为事件。</li>
+</ul>
+<p>以 input 表单元素为例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;input v-model=&apos;something&apos;&gt;</span><br><span class="line">    </span><br><span class="line">相当于</span><br><span class="line"></span><br><span class="line">&lt;input v-bind:value=&quot;something&quot; v-on:input=&quot;something = $event.target.value&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果在自定义组件中，v-model 默认会利用名为 value 的 prop 和名为 input 的事件，如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">父组件：</span><br><span class="line">&lt;ModelChild v-model=&quot;message&quot;&gt;&lt;/ModelChild&gt;</span><br><span class="line"></span><br><span class="line">子组件：</span><br><span class="line">&lt;div&gt;&#123;&#123;value&#125;&#125;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">props:&#123;</span><br><span class="line">    value: String</span><br><span class="line">&#125;,</span><br><span class="line">methods: &#123;</span><br><span class="line">  test1()&#123;</span><br><span class="line">     this.$emit(&apos;input&apos;, &apos;小红&apos;)</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<h4 id="14、Vue-组件间通信有哪几种方式？"><a href="#14、Vue-组件间通信有哪几种方式？" class="headerlink" title="14、Vue 组件间通信有哪几种方式？"></a>14、Vue 组件间通信有哪几种方式？</h4><p>3类通信：父子组件通信、隔代组件通信、兄弟组件通信<br>（1）props / $emit 适用 父子组件通信<br>（2）ref 与 $parent / $children 适用 父子组件通信<br>（3）EventBus （$emit / $on） 适用于 父子、隔代、兄弟组件通信<br>（4）$attrs/$listeners 适用于 隔代组件通信<br>（5）provide / inject 适用于 隔代组件通信<br>（6）Vuex 适用于 父子、隔代、兄弟组件通信</p>
+<h4 id="15、你使用过-Vuex-吗？"><a href="#15、你使用过-Vuex-吗？" class="headerlink" title="15、你使用过 Vuex 吗？"></a>15、你使用过 Vuex 吗？</h4><p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）。“store” 基本上就是一个容器，它包含着你的应用中大部分的状态 ( state )。</p>
+<p>主要包括以下几个模块：</p>
+<ul>
+<li>State：定义了应用状态的数据结构，可以在这里设置默认的初始状态。</li>
+<li>Getter：允许组件从 Store 中获取数据，mapGetters 辅助函数仅仅是将 store 中的 getter 映射到局部计算属性。</li>
+<li>Mutation：是唯一更改 store 中状态的方法，且必须是同步函数。</li>
+<li>Action：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作。</li>
+<li>Module：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中。</li>
+</ul>
+<h4 id="16、能说下-vue-router-中常用的-hash-和-history-路由模式实现原理吗？"><a href="#16、能说下-vue-router-中常用的-hash-和-history-路由模式实现原理吗？" class="headerlink" title="16、能说下 vue-router 中常用的 hash 和 history 路由模式实现原理吗？"></a>16、能说下 vue-router 中常用的 hash 和 history 路由模式实现原理吗？</h4><p>（1）hash 模式的实现原理</p>
+<p>早期的前端路由的实现就是基于 location.hash 来实现的。其实现原理很简单，location.hash 的值就是 URL 中 # 后面的内容。比如下面这个网站，它的 location.hash 的值为 ‘#search’：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.word.com#search</span><br></pre></td></tr></table></figure>
+
+<p>hash 路由模式的实现主要是基于下面几个特性：</p>
+<ul>
+<li>URL 中 hash 值只是客户端的一种状态，也就是说当向服务器端发出请求时，hash 部分不会被发送；</li>
+<li>hash 值的改变，都会在浏览器的访问历史中增加一个记录。因此我们能通过浏览器的回退、前进按钮控制hash 的切换；</li>
+<li>可以通过 a 标签，并设置 href 属性，当用户点击这个标签后，URL 的 hash 值会发生改变；或者使用  JavaScript 来对 loaction.hash 进行赋值，改变 URL 的 hash 值；</li>
+<li>我们可以使用 hashchange 事件来监听 hash 值的变化，从而对页面进行跳转（渲染）。</li>
+</ul>
+<p>（2）history 模式的实现原理</p>
+<p>HTML5 提供了 History API 来实现 URL 的变化。其中做最主要的 API 有以下两个：history.pushState() 和 history.repalceState()。这两个 API 可以在不进行刷新的情况下，操作浏览器的历史纪录。唯一不同的是，前者是新增一个历史记录，后者是直接替换当前的历史记录，如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">window.history.pushState(null, null, path);</span><br><span class="line">window.history.replaceState(null, null, path);</span><br></pre></td></tr></table></figure>
+
+<p>history 路由模式的实现主要基于存在下面几个特性：</p>
+<ul>
+<li>pushState 和 repalceState 两个 API 来操作实现 URL 的变化 ；</li>
+<li>我们可以使用 popstate 事件来监听 url 的变化，从而对页面进行跳转（渲染）；</li>
+<li>history.pushState() 或 history.replaceState() 不会触发 popstate 事件，这时我们需要手动触发页面跳转（渲染）。</li>
+</ul>
+<h4 id="17、什么是-MVVM？"><a href="#17、什么是-MVVM？" class="headerlink" title="17、什么是 MVVM？"></a>17、什么是 MVVM？</h4><p>（1）View 层</p>
+<p>View 是视图层，也就是用户界面。前端主要由 HTML 和 CSS 来构建 。</p>
+<p>（2）Model 层</p>
+<p>Model 是指数据模型，泛指后端进行的各种业务逻辑处理和数据操控，对于前端来说就是后端提供的 api 接口。</p>
+<p>（3）ViewModel 层</p>
+<h4 id="18、Vue-是如何实现数据双向绑定的？"><a href="#18、Vue-是如何实现数据双向绑定的？" class="headerlink" title="18、Vue 是如何实现数据双向绑定的？"></a>18、Vue 是如何实现数据双向绑定的？</h4><p>Vue 数据双向绑定主要是指：数据变化更新视图，视图变化更新数据，如下图所示：<br><img src="/images/55ffj6k34ddfg.png" alt="avatar"></p>
+<h4 id="19、Vue-中的-key-有什么作用？"><a href="#19、Vue-中的-key-有什么作用？" class="headerlink" title="19、Vue 中的 key 有什么作用？"></a>19、Vue 中的 key 有什么作用？</h4><p>key 是为 Vue 中 vnode 的唯一标记，通过这个 key，我们的 diff 操作可以更准确、更快速。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vue/" rel="tag"># vue</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/15/正则有关方法/" rel="next" title="正则有关方法">
+                <i class="fa fa-chevron-left"></i> 正则有关方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Learn">
+            
+              <p class="site-author-name" itemprop="name">Learn</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zouyu01-sz/zouyu01-sz.github.io" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=1045032607&site=qq&menu=yes" " target="_blank" title="QQ">
+                      
+                        <i class="fa fa-fw fa-qq"></i>QQ</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://my.oschina.net/u/1017791" title="zzx10" target="_blank">zzx10</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、说说你对-SPA-单页面的理解，它的优缺点分别是什么？"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#优点："><span class="nav-number">1.0.1.1.</span> <span class="nav-text">优点：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#缺点："><span class="nav-number">1.0.1.2.</span> <span class="nav-text">缺点：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、v-show-与-v-if-有什么区别？"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、v-show 与 v-if 有什么区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、Class-与-Style-如何动态绑定？"><span class="nav-number">1.0.3.</span> <span class="nav-text">3、Class 与 Style 如何动态绑定？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、怎样理解-Vue-的单向数据流？"><span class="nav-number">1.0.4.</span> <span class="nav-text">4、怎样理解 Vue 的单向数据流？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、computed-和-watch-的区别和运用的场景？"><span class="nav-number">1.0.5.</span> <span class="nav-text">5、computed 和 watch 的区别和运用的场景？</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#运用场景："><span class="nav-number">1.0.5.1.</span> <span class="nav-text">运用场景：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、直接给一个数组项赋值，Vue-能检测到变化吗？"><span class="nav-number">1.0.6.</span> <span class="nav-text">6、直接给一个数组项赋值，Vue 能检测到变化吗？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、谈谈你对-Vue-生命周期的理解？"><span class="nav-number">1.0.7.</span> <span class="nav-text">7、谈谈你对 Vue 生命周期的理解？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8、在哪个生命周期内调用异步请求？"><span class="nav-number">1.0.8.</span> <span class="nav-text">8、在哪个生命周期内调用异步请求？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9、在什么阶段才能访问操作DOM？"><span class="nav-number">1.0.9.</span> <span class="nav-text">9、在什么阶段才能访问操作DOM？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10、父组件可以监听到子组件的生命周期吗？"><span class="nav-number">1.0.10.</span> <span class="nav-text">10、父组件可以监听到子组件的生命周期吗？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11、谈谈你对-keep-alive-的了解？"><span class="nav-number">1.0.11.</span> <span class="nav-text">11、谈谈你对 keep-alive 的了解？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12、组件中-data-为什么是一个函数？"><span class="nav-number">1.0.12.</span> <span class="nav-text">12、组件中 data 为什么是一个函数？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13、v-model-的原理？"><span class="nav-number">1.0.13.</span> <span class="nav-text">13、v-model 的原理？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14、Vue-组件间通信有哪几种方式？"><span class="nav-number">1.0.14.</span> <span class="nav-text">14、Vue 组件间通信有哪几种方式？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#15、你使用过-Vuex-吗？"><span class="nav-number">1.0.15.</span> <span class="nav-text">15、你使用过 Vuex 吗？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16、能说下-vue-router-中常用的-hash-和-history-路由模式实现原理吗？"><span class="nav-number">1.0.16.</span> <span class="nav-text">16、能说下 vue-router 中常用的 hash 和 history 路由模式实现原理吗？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#17、什么是-MVVM？"><span class="nav-number">1.0.17.</span> <span class="nav-text">17、什么是 MVVM？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18、Vue-是如何实现数据双向绑定的？"><span class="nav-number">1.0.18.</span> <span class="nav-text">18、Vue 是如何实现数据双向绑定的？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#19、Vue-中的-key-有什么作用？"><span class="nav-number">1.0.19.</span> <span class="nav-text">19、Vue 中的 key 有什么作用？</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<div class="copyright">&copy; <span itemprop="copyrightYear">2017-2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Learn</span>
+
+  
+</div>
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<!--字数统计-->
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
