@@ -88,7 +88,7 @@
 <meta property="og:description" content="前言本文以前端面试官的角度出发，对 Vue 框架中一些重要的特性、框架的原理以问题的形式进行整理汇总，意在帮助作者及读者自测下 Vue 掌握的程度。 1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://zouyu01sz.github.io/images/55ffj6k34ddfg.png">
-<meta property="og:updated_time" content="2019-08-23T09:10:23.499Z">
+<meta property="og:updated_time" content="2019-08-28T06:29:24.452Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue入门到精通">
 <meta name="twitter:description" content="前言本文以前端面试官的角度出发，对 Vue 框架中一些重要的特性、框架的原理以问题的形式进行整理汇总，意在帮助作者及读者自测下 Vue 掌握的程度。 1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行">
@@ -464,7 +464,56 @@
 </li>
 </ul>
 <h4 id="6、直接给一个数组项赋值，Vue-能检测到变化吗？"><a href="#6、直接给一个数组项赋值，Vue-能检测到变化吗？" class="headerlink" title="6、直接给一个数组项赋值，Vue 能检测到变化吗？"></a>6、直接给一个数组项赋值，Vue 能检测到变化吗？</h4><p>由于 JavaScript 的限制，Vue 不能检测到以下数组的变动</p>
-<h4 id="7、谈谈你对-Vue-生命周期的理解？"><a href="#7、谈谈你对-Vue-生命周期的理解？" class="headerlink" title="7、谈谈你对 Vue 生命周期的理解？"></a>7、谈谈你对 Vue 生命周期的理解？</h4><p>1、creating 状态–vue 实例被创建的过程<br>2、mounting 状态–挂到到真实的 DOM 节点<br>3、updating 状态–如果 data 中的数据改变就会触发对应组件的重新渲染<br>4、destroying 状态–实例销毁<br>| 方法名 | 状态 | 含义 |<br>| —— | —— | —— |<br>| beforeCreate | creating 状态 | 实例创建之前调用 |<br>|created|    creating 状态|    实例创建成功，此时 data 中的数据显示出来了|<br>|beforeMount    |mounting 状态    |数据中的 data 在模版中先占一个位置|<br>|mounted    |mounting 状态    |模版中的 data 数据直接显示出来了|<br>|beforeUpdate|    updating 状态|    当 data 数据发生变化调用，发生在虚拟 DOM 重新渲染和打补丁之前|<br>|updated|    updating 状态|    数据更改导致的虚拟 DOM 重新渲染和打补丁|<br>|beforeDestroy|    destroying 状态    |在 vue 实例销毁之前调用，此时实例任然可用|<br>|destroyed|    destroying 状态|    在 vue 实例销毁之后调用|</p>
+<h4 id="7、谈谈你对-Vue-生命周期的理解？"><a href="#7、谈谈你对-Vue-生命周期的理解？" class="headerlink" title="7、谈谈你对 Vue 生命周期的理解？"></a>7、谈谈你对 Vue 生命周期的理解？</h4><p>1、creating 状态–vue 实例被创建的过程<br>2、mounting 状态–挂到到真实的 DOM 节点<br>3、updating 状态–如果 data 中的数据改变就会触发对应组件的重新渲染<br>4、destroying 状态–实例销毁</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>状态</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>beforeCreate</td>
+<td>creating 状态</td>
+<td>实例创建之前调用</td>
+</tr>
+<tr>
+<td>created</td>
+<td>creating 状态</td>
+<td>实例创建成功，此时 data 中的数据显示出来了</td>
+</tr>
+<tr>
+<td>beforeMount</td>
+<td>mounting 状态</td>
+<td>数据中的 data 在模版中先占一个位置</td>
+</tr>
+<tr>
+<td>mounted</td>
+<td>mounting 状态</td>
+<td>模版中的 data 数据直接显示出来了</td>
+</tr>
+<tr>
+<td>beforeUpdate</td>
+<td>updating 状态</td>
+<td>当 data 数据发生变化调用，发生在虚拟 DOM 重新渲染和打补丁之前</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>updating 状态</td>
+<td>数据更改导致的虚拟 DOM 重新渲染和打补丁</td>
+</tr>
+<tr>
+<td>beforeDestroy</td>
+<td>destroying 状态</td>
+<td>在 vue 实例销毁之前调用，此时实例任然可用</td>
+</tr>
+<tr>
+<td>destroyed</td>
+<td>destroying 状态</td>
+<td>在 vue 实例销毁之后调用</td>
+</tr>
+</tbody></table>
 <h4 id="8、在哪个生命周期内调用异步请求？"><a href="#8、在哪个生命周期内调用异步请求？" class="headerlink" title="8、在哪个生命周期内调用异步请求？"></a>8、在哪个生命周期内调用异步请求？</h4><p>可以在钩子函数 created、beforeMount、mounted 中进行调用，因为在这三个钩子函数中，data 已经创建，可以将服务端端返回的数据进行赋值。但是本人推荐在 created 钩子函数中调用异步请求，因为在 created 钩子函数中调用异步请求有以下优点：</p>
 <ol>
 <li>能更快获取到服务端数据，减少页面 loading 时间；</li>
@@ -568,8 +617,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/23/Vue性能优化/" rel="next" title="Vue性能优化">
-                <i class="fa fa-chevron-left"></i> Vue性能优化
+              <a href="/2018/03/15/前端常用的nginx知识/" rel="next" title="前端常用的nginx知识">
+                <i class="fa fa-chevron-left"></i> 前端常用的nginx知识
               </a>
             
           </div>
@@ -666,7 +715,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -677,7 +726,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -688,7 +737,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

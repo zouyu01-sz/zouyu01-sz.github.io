@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="nginx,">
 
 
 
@@ -79,13 +79,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Learn个人博客-分享">
-<meta property="og:url" content="http://zouyu01sz.github.io/index.html">
+<meta name="description" content="前言由于前端技术的蓬勃发展和你自身的不断努力，很多小伙伴已经打通了任督二脉，做到了前后端通吃。你们就是自己程序世界里的神，在这里你们无所不能，创造世界，制定规则和逻辑。当一个属于你的世界做好后，你需要展示给朋友，发布于众人，让爱你的人欣赏。这时候我们需要一个强有力的服务器作为容器，而Nginx可以满足你的一切幻想;当然即便你还未打通任督二脉，作为一个前端，我相信你一定听说过Nginx。因为它在最近">
+<meta name="keywords" content="nginx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端常用的nginx知识">
+<meta property="og:url" content="http://zouyu01sz.github.io/2018/03/15/前端常用的nginx知识/index.html">
 <meta property="og:site_name" content="Learn个人博客-分享">
+<meta property="og:description" content="前言由于前端技术的蓬勃发展和你自身的不断努力，很多小伙伴已经打通了任督二脉，做到了前后端通吃。你们就是自己程序世界里的神，在这里你们无所不能，创造世界，制定规则和逻辑。当一个属于你的世界做好后，你需要展示给朋友，发布于众人，让爱你的人欣赏。这时候我们需要一个强有力的服务器作为容器，而Nginx可以满足你的一切幻想;当然即便你还未打通任督二脉，作为一个前端，我相信你一定听说过Nginx。因为它在最近">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://zouyu01sz.github.io/images/is_1111osd222nginx.png">
+<meta property="og:image" content="http://zouyu01sz.github.io/images/J_qLKrvR7WHBcmCbWauHKK78.png">
+<meta property="og:image" content="http://zouyu01sz.github.io/images/size0llo892.png">
+<meta property="og:updated_time" content="2019-08-28T05:48:21.217Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Learn个人博客-分享">
+<meta name="twitter:title" content="前端常用的nginx知识">
+<meta name="twitter:description" content="前言由于前端技术的蓬勃发展和你自身的不断努力，很多小伙伴已经打通了任督二脉，做到了前后端通吃。你们就是自己程序世界里的神，在这里你们无所不能，创造世界，制定规则和逻辑。当一个属于你的世界做好后，你需要展示给朋友，发布于众人，让爱你的人欣赏。这时候我们需要一个强有力的服务器作为容器，而Nginx可以满足你的一切幻想;当然即便你还未打通任督二脉，作为一个前端，我相信你一定听说过Nginx。因为它在最近">
+<meta name="twitter:image" content="http://zouyu01sz.github.io/images/is_1111osd222nginx.png">
 
 
 
@@ -115,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://zouyu01sz.github.io/">
+  <link rel="canonical" href="http://zouyu01sz.github.io/2018/03/15/前端常用的nginx知识/">
 
 
 
 
 
-  <title>Learn个人博客-分享</title>
+  <title>前端常用的nginx知识 | Learn个人博客-分享</title>
   
 
 
@@ -140,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
       <a href="https://github.com/zouyu01-sz/zouyu01-sz.github.io">     
         <img style="position: absolute; top: 0;
@@ -269,874 +277,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zouyu01sz.github.io/2019/05/01/linux下Mysql安装使用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Learn">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Learn个人博客-分享">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/01/linux下Mysql安装使用/" itemprop="url">linux下Mysql安装使用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-01T14:28:46+08:00">
-                2019-05-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/Mysql/" itemprop="url" rel="index">
-                    <span itemprop="name">Mysql</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/05/01/linux下Mysql安装使用/" class="leancloud_visitors" data-flag-title="linux下Mysql安装使用">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="一、系统环境-Ubuntu18-04，-Mysql-5-7-25"><a href="#一、系统环境-Ubuntu18-04，-Mysql-5-7-25" class="headerlink" title="一、系统环境 Ubuntu18.04， Mysql 5.7.25"></a>一、系统环境 Ubuntu18.04， Mysql 5.7.25</h4><h4 id="二、通过apt-安装MySQL"><a href="#二、通过apt-安装MySQL" class="headerlink" title="二、通过apt 安装MySQL"></a>二、通过apt 安装MySQL</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#命令1</span><br><span class="line">sudo apt-get update</span><br><span class="line">#命令2</span><br><span class="line">sudo apt-get install mysql-server</span><br></pre></td></tr></table></figure>
-
-<h4 id="三、配置初始化信息"><a href="#三、配置初始化信息" class="headerlink" title="三、配置初始化信息"></a>三、配置初始化信息</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">Securing the MySQL server deployment.</span><br><span class="line"></span><br><span class="line">Connecting to MySQL using a blank password.</span><br><span class="line"></span><br><span class="line">VALIDATE PASSWORD PLUGIN can be used to test passwords</span><br><span class="line">and improve security. It checks the strength of password</span><br><span class="line">and allows the users to set only those passwords which are</span><br><span class="line">secure enough. Would you like to setup VALIDATE PASSWORD plugin?</span><br><span class="line"></span><br><span class="line">Press y|Y for Yes, any other key for No: N（选择N，不会进行密码的强校验）</span><br><span class="line">Please set the password for root here.</span><br><span class="line"></span><br><span class="line">New password: </span><br><span class="line"></span><br><span class="line">Re-enter new password: </span><br><span class="line">By default, a MySQL installation has an anonymous user,</span><br><span class="line">allowing anyone to log into MySQL without having to have</span><br><span class="line">a user account created for them. This is intended only for</span><br><span class="line">testing, and to make the installation go a bit smoother.</span><br><span class="line">You should remove them before moving into a production</span><br><span class="line">environment.</span><br><span class="line"></span><br><span class="line">Remove anonymous users? (Press y|Y for Yes, any other key for No) : N（选择N，不删除匿名用户）</span><br><span class="line"></span><br><span class="line"> ... skipping.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Normally, root should only be allowed to connect from</span><br><span class="line">&apos;localhost&apos;. This ensures that someone cannot guess at</span><br><span class="line">the root password from the network.</span><br><span class="line"></span><br><span class="line">Disallow root login remotely? (Press y|Y for Yes, any other key for No) : N（选择N，允许root远程连接）</span><br><span class="line"></span><br><span class="line"> ... skipping.</span><br><span class="line">By default, MySQL comes with a database named &apos;test&apos; that</span><br><span class="line">anyone can access. This is also intended only for testing,</span><br><span class="line">and should be removed before moving into a production</span><br><span class="line">environment.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Remove test database and access to it? (Press y|Y for Yes, any other key for No) : N（选择N，不删除test数据库）</span><br><span class="line"></span><br><span class="line"> ... skipping.</span><br><span class="line">Reloading the privilege tables will ensure that all changes</span><br><span class="line">made so far will take effect immediately.</span><br><span class="line"></span><br><span class="line">Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y（选择Y，修改权限立即生效）</span><br><span class="line">Success.</span><br><span class="line"></span><br><span class="line">All done!</span><br></pre></td></tr></table></figure>
-
-<p>查看数据库是否安装成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysql.service   //检查数据状态</span><br><span class="line">sudo service mysql restart       //数据库重启</span><br><span class="line"></span><br><span class="line">service  iptables stop          //新手建议先关闭防火墙，免得下一步操作有问题</span><br></pre></td></tr></table></figure>
-
-<h4 id="四、配置访问权限"><a href="#四、配置访问权限" class="headerlink" title="四、配置访问权限"></a>四、配置访问权限</h4><p>在Ubuntu下MySQL缺省是只允许本地访问的，使用workbench连接工具是连不上的；<br>如果你要其他机器也能够访问的话，需要进行配置：</p>
-<ol>
-<li><p>首先用根用户进入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql -uroot -p</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>登入root进行其他设置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//创建一个 root账号，密码为123456</span><br><span class="line">GRANT ALL PRIVILEGES ON *.* TO &apos;root&apos;@&apos;%&apos; IDENTIFIED BY &apos;123456&apos; WITH GRANT OPTION;</span><br><span class="line">FLUSH PRIVILEGES;</span><br><span class="line"></span><br><span class="line">exit  退出</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置允许远程连接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/mysql/mysql.conf.d    </span><br><span class="line">sudo vim mysqld.cnf         //如下设置其他机器允许连接</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p><img src="/images/alow2380d00.png" alt="avatar"></p>
-<h4 id="五、新建数据库和用户"><a href="#五、新建数据库和用户" class="headerlink" title="五、新建数据库和用户"></a>五、新建数据库和用户</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">##1 创建数据库studentService</span><br><span class="line">CREATE DATABASE studentService;</span><br><span class="line">##2 创建用户teacher(密码admin) 并赋予其studentService数据库的远程连接权限</span><br><span class="line">GRANT ALL PRIVILEGES ON teacher.* TO studentService@% IDENTIFIED BY &quot;admin&quot;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="六、修改root用户密码"><a href="#六、修改root用户密码" class="headerlink" title="六、修改root用户密码"></a>六、修改root用户密码</h4><ol>
-<li><p>首先停掉mysql进程服务</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">killall -TERM mysqld</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>连接具体数据库（以 mysql 数据库为例）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更改root密码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update mysql.user set authentication_string=password(&apos;1234qwer&apos;) where user=&apos;root&apos;；</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>注意password（新密码），而且不要加and Host = ‘localhost’这部分，会更改失败。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zouyu01sz.github.io/2019/04/30/linux下安装pm2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Learn">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Learn个人博客-分享">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/30/linux下安装pm2/" itemprop="url">linux下安装pm2</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-30T14:07:26+08:00">
-                2019-04-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/node/" itemprop="url" rel="index">
-                    <span itemprop="name">node</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/04/30/linux下安装pm2/" class="leancloud_visitors" data-flag-title="linux下安装pm2">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>对于一个linux新手来说，pm2真的是一大坑，看了网上好多例子，但没有一个能说明白的，本人也是各种尝试和采坑给大家分享下正确经验</p>
-<h4 id="pm2安装使用"><a href="#pm2安装使用" class="headerlink" title="pm2安装使用"></a>pm2安装使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install pm2 -g</span><br></pre></td></tr></table></figure>
-
-<p>执行上面shell命令你以为就可以使用<strong>pm2</strong>，然并卯</p>
-<p>我们来用 pm2 list 跑下<br><img src="/images/pm2_35456.png" alt="avatar"></p>
-<p><span style="color: red">说明：</span>没有配制到全局，虽然安装到全局，不知道为毛，linux下不像windows下能自动创造一个环境变量去实现我们的全局。所以我们需要创建一个linux下的<strong>软连接</strong>。</p>
-<p>解决方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">echo $PATH             //查看安装路径</span><br><span class="line">cd /usr/local/bin      //切换安装路径</span><br><span class="line">ln -s /usr/local/node-v10.16.3-linux-x64/bin/pm2 /usr/local/bin/       //增加软链接</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pm2 list            </span><br><span class="line"></span><br><span class="line">┌──────────┬────┬──────┬─────┬────────┬─────────┬────────┬─────┬─────┬──────┬──────────┐</span><br><span class="line">│ App name │ id │ mode │ pid │ status │ restart │ uptime │ cpu │ mem │ user │ watching │</span><br><span class="line">└──────────┴────┴──────┴─────┴────────┴─────────┴────────┴─────┴─────┴──────┴──────────┘</span><br></pre></td></tr></table></figure>
-
-<h4 id="ubuntu系统下-使用pm2设置node项目开机自启动"><a href="#ubuntu系统下-使用pm2设置node项目开机自启动" class="headerlink" title="ubuntu系统下 使用pm2设置node项目开机自启动"></a>ubuntu系统下 使用pm2设置node项目开机自启动</h4><ol>
-<li>sudo pm2 start ./bin/www</li>
-<li>sudo pm2 save</li>
-<li>sudo pm2 startup</li>
-<li>sudo pm2 save</li>
-<li>重启系统试一下：如果不行执行<br>chattr +i /home/XXX/.pm2/dump.pm2再重试一下</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zouyu01sz.github.io/2019/04/28/ubuntu18-04安装最新nodejs/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Learn">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Learn个人博客-分享">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/28/ubuntu18-04安装最新nodejs/" itemprop="url">ubuntu18.04安装最新nodejs</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-28T13:48:02+08:00">
-                2019-04-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/node/" itemprop="url" rel="index">
-                    <span itemprop="name">node</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/04/28/ubuntu18-04安装最新nodejs/" class="leancloud_visitors" data-flag-title="ubuntu18.04安装最新nodejs">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h4><p><strong>ubuntu 18.04 LTS版本</strong></p>
-<h4 id="进入官网查找最新下载地址"><a href="#进入官网查找最新下载地址" class="headerlink" title="进入官网查找最新下载地址"></a>进入官网查找最新下载地址</h4><ol>
-<li><p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br><img src="/images/20190511102232845.png" alt="avatar"></p>
-</li>
-<li><p>右键复制源码下载链接</p>
-</li>
-<li><p>在系统内一次输入以下指令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wget  https://nodejs.org/dist/v10.16.3/node-v10.16.3-linux-x64.tar.gz</span><br><span class="line"></span><br><span class="line">tar -xvf node-v10.16.3-linux-x64.tar.gz</span><br><span class="line"></span><br><span class="line">//移动安装位置</span><br><span class="line">sudo mv node-v10.16.3-linux-x64 /usr/local</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建软连接 可以在任意路径下执行npm node</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s /usr/local/node-v10.16.3-linux-x64/bin/node /usr/local/bin/node </span><br><span class="line">sudo ln -s /usr/local/node-v10.16.3-linux-x64/bin/npm /usr/local/bin/npm</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p><strong>如果你在创建软连的时候，出现npm已经存在,node 已经存在</strong><br>解决方案：<br>删除 /usr/local/bin/目录下的node，npm</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /usr/local/bin/node</span><br><span class="line">sudo rm -rf /usr/local/bin/npm</span><br></pre></td></tr></table></figure>
-
-<p>之后再创建软连接，完成。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line"></span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zouyu01sz.github.io/2018/11/12/正则有关方法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Learn">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Learn个人博客-分享">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/12/正则有关方法/" itemprop="url">正则有关方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-12T17:01:41+08:00">
-                2018-11-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/正则/" itemprop="url" rel="index">
-                    <span itemprop="name">正则</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/11/12/正则有关方法/" class="leancloud_visitors" data-flag-title="正则有关方法">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="正则的方法和与正则有关的方法"><a href="#正则的方法和与正则有关的方法" class="headerlink" title="正则的方法和与正则有关的方法"></a>正则的方法和与正则有关的方法</h3><hr>
-
-<p>共有6个，字符串实例4个，正则实例2个：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">String#search</span><br><span class="line"></span><br><span class="line">String#split</span><br><span class="line"></span><br><span class="line">String#match</span><br><span class="line"></span><br><span class="line">String#replace</span><br><span class="line"></span><br><span class="line">RegExp#test</span><br><span class="line"></span><br><span class="line">RegExp#exec</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-search"><a href="#1-search" class="headerlink" title="1.search()"></a>1.search()</h3><hr>
-
-<p>定义：正则去匹配字符串，如果匹配成功，就返回匹配成功的位置，匹配失败就返回-1.</p>
-<p>例子：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var regex = /\d/;</span><br><span class="line">var string = <span class="string">"abc123"</span>;</span><br><span class="line">console.log( string.search(regex) );</span><br><span class="line">// =&gt; 3</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/12/正则有关方法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zouyu01sz.github.io/2018/05/07/Vue入门到精通/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Learn">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Learn个人博客-分享">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/07/Vue入门到精通/" itemprop="url">Vue入门到精通</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-07T11:26:18+08:00">
-                2018-05-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index">
-                    <span itemprop="name">Vue</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/05/07/Vue入门到精通/" class="leancloud_visitors" data-flag-title="Vue入门到精通">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文以前端面试官的角度出发，对 Vue 框架中一些重要的特性、框架的原理以问题的形式进行整理汇总，意在帮助作者及读者自测下 Vue 掌握的程度。</p>
-<h4 id="1、说说你对-SPA-单页面的理解，它的优缺点分别是什么？"><a href="#1、说说你对-SPA-单页面的理解，它的优缺点分别是什么？" class="headerlink" title="1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？"></a>1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？</h4><p>SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行页面的重新加载或跳转；取而代之的是利用路由机制实现 HTML 内容的变换，UI 与用户的交互，避免页面的重新加载。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/07/Vue入门到精通/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -1166,9 +309,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/15/前端常用的nginx知识/" itemprop="url">前端常用的nginx知识</a></h1>
+          <h1 class="post-title" itemprop="name headline">前端常用的nginx知识</h1>
         
 
         <div class="post-meta">
@@ -1216,6 +357,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/15/前端常用的nginx知识/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/03/15/前端常用的nginx知识/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1232,6 +383,11 @@
              </span>
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -1251,9 +407,7 @@
       
 
       
-        
-          
-            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>由于前端技术的蓬勃发展和你自身的不断努力，很多小伙伴已经打通了任督二脉，做到了前后端通吃。你们就是自己程序世界里的神，在这里你们无所不能，创造世界，制定规则和逻辑。当一个属于你的世界做好后，你需要展示给朋友，发布于众人，让爱你的人欣赏。这时候我们需要一个强有力的服务器作为容器，而Nginx可以满足你的一切幻想;当然即便你还未打通任督二脉，作为一个前端，我相信你一定听说过Nginx。因为它在最近两年实在是太火了，作为一个前端如果不会Nginx，都不敢跟别人说自己是大前端。</p>
+        <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>由于前端技术的蓬勃发展和你自身的不断努力，很多小伙伴已经打通了任督二脉，做到了前后端通吃。你们就是自己程序世界里的神，在这里你们无所不能，创造世界，制定规则和逻辑。当一个属于你的世界做好后，你需要展示给朋友，发布于众人，让爱你的人欣赏。这时候我们需要一个强有力的服务器作为容器，而Nginx可以满足你的一切幻想;当然即便你还未打通任督二脉，作为一个前端，我相信你一定听说过Nginx。因为它在最近两年实在是太火了，作为一个前端如果不会Nginx，都不敢跟别人说自己是大前端。</p>
 <h4 id="Nginx的优点"><a href="#Nginx的优点" class="headerlink" title="Nginx的优点"></a>Nginx的优点</h4><ul>
 <li>支持海量高并发：采用IO多路复用epoll。官方测试Nginx能够支持5万并发链接，实际生产环境中可以支撑2-4万并发连接数。</li>
 <li>内存消耗少：在主流的服务器中Nginx目前是内存消耗最小的了，比如我们用Nginx+PHP，在3万并发链接下，开启10个Nginx进程消耗150M内存。</li>
@@ -1369,8 +523,6 @@
 
 <p>如图：<br><img src="/images/size0llo892.png" alt="avatar"></p>
 
-          
-        
       
     </div>
     
@@ -1385,177 +537,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zouyu01sz.github.io/2017/10/23/Vue性能优化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Learn">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Learn个人博客-分享">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/23/Vue性能优化/" itemprop="url">Vue性能优化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T10:28:54+08:00">
-                2017-10-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index">
-                    <span itemprop="name">Vue</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/nginx/" rel="tag"># nginx</a>
           
-
-          
-            
-          
-
-          
-          
-             <span id="/2017/10/23/Vue性能优化/" class="leancloud_visitors" data-flag-title="Vue性能优化">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><hr>
-Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前端开发中最脏最累的 DOM 操作部分， 我们不再需要去考虑如何操作 DOM 以及如何最高效地操作 DOM；但 Vue 项目中仍然存在项目首屏优化、Webpack 编译配置优化等问题，所以我们仍然需要去关注 Vue 项目性能方面的优化，使项目具有更高效的性能、更好的用户体验。本文是作者通过实际项目的优化实践进行总结而来，希望读者读完本文，有一定的启发思考，从而对自己的项目进行优化起到帮助。本文内容分为以下三部分组成：
-
-<ol>
-<li>Vue 代码层面的优化；</li>
-<li>webpack 配置层面的优化；</li>
-<li>基础的 Web 技术层面的优化。</li></ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/23/Vue性能优化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/23/Vue性能优化/" rel="next" title="Vue性能优化">
+                <i class="fa fa-chevron-left"></i> Vue性能优化
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/07/Vue入门到精通/" rel="prev" title="Vue入门到精通">
+                Vue入门到精通 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1565,10 +580,11 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1576,6 +592,17 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1596,8 +623,17 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1689,6 +725,22 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nginx的优点"><span class="nav-number">2.</span> <span class="nav-text">Nginx的优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于apt-get-Ubuntu18-04-2-的方式安装Nginx"><span class="nav-number">3.</span> <span class="nav-text">基于apt-get(Ubuntu18.04.2)的方式安装Nginx</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看Nginx的安装目录"><span class="nav-number">4.</span> <span class="nav-text">查看Nginx的安装目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nginx-conf文件解读"><span class="nav-number">5.</span> <span class="nav-text">nginx.conf文件解读</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nginx服务启动、停止、重启"><span class="nav-number">6.</span> <span class="nav-text">Nginx服务启动、停止、重启</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义错误页和访问设置"><span class="nav-number">7.</span> <span class="nav-text">自定义错误页和访问设置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#多错误指向一个页面"><span class="nav-number">7.1.</span> <span class="nav-text">多错误指向一个页面</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#单独为错误置顶处理方式"><span class="nav-number">7.2.</span> <span class="nav-text">单独为错误置顶处理方式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#把错误码换成一个地址"><span class="nav-number">7.3.</span> <span class="nav-text">把错误码换成一个地址</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#简单实现访问控制"><span class="nav-number">7.4.</span> <span class="nav-text">简单实现访问控制</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nginx访问权限详讲"><span class="nav-number">8.</span> <span class="nav-text">Nginx访问权限详讲</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#指令优先级"><span class="nav-number">8.1.</span> <span class="nav-text">指令优先级</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#复杂访问控制权限匹配"><span class="nav-number">8.2.</span> <span class="nav-text">复杂访问控制权限匹配</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用正则表达式设置访问权限"><span class="nav-number">8.3.</span> <span class="nav-text">使用正则表达式设置访问权限</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nginx设置虚拟主机"><span class="nav-number">9.</span> <span class="nav-text">Nginx设置虚拟主机</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基于端口号配置虚拟主机"><span class="nav-number">9.1.</span> <span class="nav-text">基于端口号配置虚拟主机</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#基于IP的虚拟主机"><span class="nav-number">9.2.</span> <span class="nav-text">基于IP的虚拟主机</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nginx使用域名设置虚拟主机"><span class="nav-number">10.</span> <span class="nav-text">Nginx使用域名设置虚拟主机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nginx反向代理的设置"><span class="nav-number">11.</span> <span class="nav-text">Nginx反向代理的设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nginx适配PC或移动设备"><span class="nav-number">12.</span> <span class="nav-text">Nginx适配PC或移动设备</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#http-user-agent的使用："><span class="nav-number">12.1.</span> <span class="nav-text">$http_user_agent的使用：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Nginx的Gzip压缩配置"><span class="nav-number">13.</span> <span class="nav-text">Nginx的Gzip压缩配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gzip的配置项"><span class="nav-number">13.1.</span> <span class="nav-text">gzip的配置项</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#nginx文件上传修改默认大小-10M-gt-300M"><span class="nav-number">13.2.</span> <span class="nav-text">nginx文件上传修改默认大小(10M =&gt; 300M)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1865,6 +917,10 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
