@@ -398,47 +398,16 @@
 
       
         
-          
-            <h4 id="一、系统环境-Ubuntu18-04，-Mysql-5-7-25"><a href="#一、系统环境-Ubuntu18-04，-Mysql-5-7-25" class="headerlink" title="一、系统环境 Ubuntu18.04， Mysql 5.7.25"></a>一、系统环境 Ubuntu18.04， Mysql 5.7.25</h4><h4 id="二、通过apt-安装MySQL"><a href="#二、通过apt-安装MySQL" class="headerlink" title="二、通过apt 安装MySQL"></a>二、通过apt 安装MySQL</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#命令1</span><br><span class="line">sudo apt-get update</span><br><span class="line">#命令2</span><br><span class="line">sudo apt-get install mysql-server</span><br></pre></td></tr></table></figure>
+          <h4 id="一、系统环境-Ubuntu18-04，-Mysql-5-7-25"><a href="#一、系统环境-Ubuntu18-04，-Mysql-5-7-25" class="headerlink" title="一、系统环境 Ubuntu18.04， Mysql 5.7.25"></a>一、系统环境 Ubuntu18.04， Mysql 5.7.25</h4><h4 id="二、通过apt-安装MySQL"><a href="#二、通过apt-安装MySQL" class="headerlink" title="二、通过apt 安装MySQL"></a>二、通过apt 安装MySQL</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#命令1</span><br><span class="line">sudo apt-get update</span><br><span class="line">#命令2</span><br><span class="line">sudo apt-get install mysql-server</span><br></pre></td></tr></table></figure>
 
 <h4 id="三、配置初始化信息"><a href="#三、配置初始化信息" class="headerlink" title="三、配置初始化信息"></a>三、配置初始化信息</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">Securing the MySQL server deployment.</span><br><span class="line"></span><br><span class="line">Connecting to MySQL using a blank password.</span><br><span class="line"></span><br><span class="line">VALIDATE PASSWORD PLUGIN can be used to test passwords</span><br><span class="line">and improve security. It checks the strength of password</span><br><span class="line">and allows the users to set only those passwords which are</span><br><span class="line">secure enough. Would you like to setup VALIDATE PASSWORD plugin?</span><br><span class="line"></span><br><span class="line">Press y|Y for Yes, any other key for No: N（选择N，不会进行密码的强校验）</span><br><span class="line">Please set the password for root here.</span><br><span class="line"></span><br><span class="line">New password: </span><br><span class="line"></span><br><span class="line">Re-enter new password: </span><br><span class="line">By default, a MySQL installation has an anonymous user,</span><br><span class="line">allowing anyone to log into MySQL without having to have</span><br><span class="line">a user account created for them. This is intended only for</span><br><span class="line">testing, and to make the installation go a bit smoother.</span><br><span class="line">You should remove them before moving into a production</span><br><span class="line">environment.</span><br><span class="line"></span><br><span class="line">Remove anonymous users? (Press y|Y for Yes, any other key for No) : N（选择N，不删除匿名用户）</span><br><span class="line"></span><br><span class="line"> ... skipping.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Normally, root should only be allowed to connect from</span><br><span class="line">&apos;localhost&apos;. This ensures that someone cannot guess at</span><br><span class="line">the root password from the network.</span><br><span class="line"></span><br><span class="line">Disallow root login remotely? (Press y|Y for Yes, any other key for No) : N（选择N，允许root远程连接）</span><br><span class="line"></span><br><span class="line"> ... skipping.</span><br><span class="line">By default, MySQL comes with a database named &apos;test&apos; that</span><br><span class="line">anyone can access. This is also intended only for testing,</span><br><span class="line">and should be removed before moving into a production</span><br><span class="line">environment.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Remove test database and access to it? (Press y|Y for Yes, any other key for No) : N（选择N，不删除test数据库）</span><br><span class="line"></span><br><span class="line"> ... skipping.</span><br><span class="line">Reloading the privilege tables will ensure that all changes</span><br><span class="line">made so far will take effect immediately.</span><br><span class="line"></span><br><span class="line">Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y（选择Y，修改权限立即生效）</span><br><span class="line">Success.</span><br><span class="line"></span><br><span class="line">All done!</span><br></pre></td></tr></table></figure>
-
-<p>查看数据库是否安装成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysql.service   //检查数据状态</span><br><span class="line">sudo service mysql restart       //数据库重启</span><br><span class="line"></span><br><span class="line">service  iptables stop          //新手建议先关闭防火墙，免得下一步操作有问题</span><br></pre></td></tr></table></figure>
-
-<h4 id="四、配置访问权限"><a href="#四、配置访问权限" class="headerlink" title="四、配置访问权限"></a>四、配置访问权限</h4><p>在Ubuntu下MySQL缺省是只允许本地访问的，使用workbench连接工具是连不上的；<br>如果你要其他机器也能够访问的话，需要进行配置：</p>
-<ol>
-<li><p>首先用根用户进入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql -uroot -p</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>登入root进行其他设置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//创建一个 root账号，密码为123456</span><br><span class="line">GRANT ALL PRIVILEGES ON *.* TO &apos;root&apos;@&apos;%&apos; IDENTIFIED BY &apos;123456&apos; WITH GRANT OPTION;</span><br><span class="line">FLUSH PRIVILEGES;</span><br><span class="line"></span><br><span class="line">exit  退出</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置允许远程连接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/mysql/mysql.conf.d    </span><br><span class="line">sudo vim mysqld.cnf         //如下设置其他机器允许连接</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p><img src="/images/alow2380d00.png" alt="avatar"></p>
-<h4 id="五、新建数据库和用户"><a href="#五、新建数据库和用户" class="headerlink" title="五、新建数据库和用户"></a>五、新建数据库和用户</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">##1 创建数据库studentService</span><br><span class="line">CREATE DATABASE studentService;</span><br><span class="line">##2 创建用户teacher(密码admin) 并赋予其studentService数据库的远程连接权限</span><br><span class="line">GRANT ALL PRIVILEGES ON teacher.* TO studentService@% IDENTIFIED BY &quot;admin&quot;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="六、修改root用户密码"><a href="#六、修改root用户密码" class="headerlink" title="六、修改root用户密码"></a>六、修改root用户密码</h4><ol>
-<li><p>首先停掉mysql进程服务</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">killall -TERM mysqld</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>连接具体数据库（以 mysql 数据库为例）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更改root密码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update mysql.user set authentication_string=password(&apos;1234qwer&apos;) where user=&apos;root&apos;；</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>注意password（新密码），而且不要加and Host = ‘localhost’这部分，会更改失败。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/01/linux下Mysql安装使用/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -588,25 +557,17 @@
 
       
         
-          
-            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>对于一个linux新手来说，pm2真的是一大坑，看了网上好多例子，但没有一个能说明白的，本人也是各种尝试和采坑给大家分享下正确经验</p>
+          <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>对于一个linux新手来说，pm2真的是一大坑，看了网上好多例子，但没有一个能说明白的，本人也是各种尝试和采坑给大家分享下正确经验</p>
 <h4 id="pm2安装使用"><a href="#pm2安装使用" class="headerlink" title="pm2安装使用"></a>pm2安装使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install pm2 -g</span><br></pre></td></tr></table></figure>
 
 <p>执行上面shell命令你以为就可以使用<strong>pm2</strong>，然并卯</p>
-<p>我们来用 pm2 list 跑下<br><img src="/images/pm2_35456.png" alt="avatar"></p>
-<p><span style="color: red">说明：</span>没有配制到全局，虽然安装到全局，不知道为毛，linux下不像windows下能自动创造一个环境变量去实现我们的全局。所以我们需要创建一个linux下的<strong>软连接</strong>。</p>
-<p>解决方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">echo $PATH             //查看安装路径</span><br><span class="line">cd /usr/local/bin      //切换安装路径</span><br><span class="line">ln -s /usr/local/node-v10.16.3-linux-x64/bin/pm2 /usr/local/bin/       //增加软链接</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pm2 list            </span><br><span class="line"></span><br><span class="line">┌──────────┬────┬──────┬─────┬────────┬─────────┬────────┬─────┬─────┬──────┬──────────┐</span><br><span class="line">│ App name │ id │ mode │ pid │ status │ restart │ uptime │ cpu │ mem │ user │ watching │</span><br><span class="line">└──────────┴────┴──────┴─────┴────────┴─────────┴────────┴─────┴─────┴──────┴──────────┘</span><br></pre></td></tr></table></figure>
-
-<h4 id="ubuntu系统下-使用pm2设置node项目开机自启动"><a href="#ubuntu系统下-使用pm2设置node项目开机自启动" class="headerlink" title="ubuntu系统下 使用pm2设置node项目开机自启动"></a>ubuntu系统下 使用pm2设置node项目开机自启动</h4><ol>
-<li>sudo pm2 start ./bin/www</li>
-<li>sudo pm2 save</li>
-<li>sudo pm2 startup</li>
-<li>sudo pm2 save</li>
-<li>重启系统试一下：如果不行执行<br>chattr +i /home/XXX/.pm2/dump.pm2再重试一下</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/30/linux下安装pm2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -756,29 +717,17 @@
 
       
         
-          
-            <h4 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h4><p><strong>ubuntu 18.04 LTS版本</strong></p>
+          <h4 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h4><p><strong>ubuntu 18.04 LTS版本</strong></p>
 <h4 id="进入官网查找最新下载地址"><a href="#进入官网查找最新下载地址" class="headerlink" title="进入官网查找最新下载地址"></a>进入官网查找最新下载地址</h4><ol>
-<li><p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br><img src="/images/20190511102232845.png" alt="avatar"></p>
-</li>
-<li><p>右键复制源码下载链接</p>
-</li>
-<li><p>在系统内一次输入以下指令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wget  https://nodejs.org/dist/v10.16.3/node-v10.16.3-linux-x64.tar.gz</span><br><span class="line"></span><br><span class="line">tar -xvf node-v10.16.3-linux-x64.tar.gz</span><br><span class="line"></span><br><span class="line">//移动安装位置</span><br><span class="line">sudo mv node-v10.16.3-linux-x64 /usr/local</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建软连接 可以在任意路径下执行npm node</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s /usr/local/node-v10.16.3-linux-x64/bin/node /usr/local/bin/node </span><br><span class="line">sudo ln -s /usr/local/node-v10.16.3-linux-x64/bin/npm /usr/local/bin/npm</span><br></pre></td></tr></table></figure>
-
-</li>
+<li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a><br><img src="/images/20190511102232845.png" alt="avatar"></li>
 </ol>
-<p><strong>如果你在创建软连的时候，出现npm已经存在,node 已经存在</strong><br>解决方案：<br>删除 /usr/local/bin/目录下的node，npm</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /usr/local/bin/node</span><br><span class="line">sudo rm -rf /usr/local/bin/npm</span><br></pre></td></tr></table></figure>
-
-<p>之后再创建软连接，完成。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line"></span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/28/ubuntu18-04安装最新nodejs/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1252,124 +1201,20 @@
 
       
         
-          
-            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>由于前端技术的蓬勃发展和你自身的不断努力，很多小伙伴已经打通了任督二脉，做到了前后端通吃。你们就是自己程序世界里的神，在这里你们无所不能，创造世界，制定规则和逻辑。当一个属于你的世界做好后，你需要展示给朋友，发布于众人，让爱你的人欣赏。这时候我们需要一个强有力的服务器作为容器，而Nginx可以满足你的一切幻想;当然即便你还未打通任督二脉，作为一个前端，我相信你一定听说过Nginx。因为它在最近两年实在是太火了，作为一个前端如果不会Nginx，都不敢跟别人说自己是大前端。</p>
+          <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>由于前端技术的蓬勃发展和你自身的不断努力，很多小伙伴已经打通了任督二脉，做到了前后端通吃。你们就是自己程序世界里的神，在这里你们无所不能，创造世界，制定规则和逻辑。当一个属于你的世界做好后，你需要展示给朋友，发布于众人，让爱你的人欣赏。这时候我们需要一个强有力的服务器作为容器，而Nginx可以满足你的一切幻想;当然即便你还未打通任督二脉，作为一个前端，我相信你一定听说过Nginx。因为它在最近两年实在是太火了，作为一个前端如果不会Nginx，都不敢跟别人说自己是大前端。</p>
 <h4 id="Nginx的优点"><a href="#Nginx的优点" class="headerlink" title="Nginx的优点"></a>Nginx的优点</h4><ul>
 <li>支持海量高并发：采用IO多路复用epoll。官方测试Nginx能够支持5万并发链接，实际生产环境中可以支撑2-4万并发连接数。</li>
 <li>内存消耗少：在主流的服务器中Nginx目前是内存消耗最小的了，比如我们用Nginx+PHP，在3万并发链接下，开启10个Nginx进程消耗150M内存。</li>
 <li>免费使用可以商业化：Nginx为开源软件，采用的是2-clause BSD-like协议，可以免费使用，并且可以用于商业。</li>
 <li>配置文件简单：网络和程序配置通俗易懂，即使非专业运维也能看懂。<br>当然它的有点还有很多，感兴趣的同学可以自行百度更多</li>
 </ul>
-<h4 id="基于apt-get-Ubuntu18-04-2-的方式安装Nginx"><a href="#基于apt-get-Ubuntu18-04-2-的方式安装Nginx" class="headerlink" title="基于apt-get(Ubuntu18.04.2)的方式安装Nginx"></a>基于apt-get(Ubuntu18.04.2)的方式安装Nginx</h4><p>我们可以先来查看一下是否已经存在，命令如下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep nginx</span><br></pre></td></tr></table></figure>
-
-<p>如果出现类似下面的内容，说明nginx是存在的。<br><img src="/images/is_1111osd222nginx.png" alt="avatar"> </p>
-<p>如果不存在</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo  apt-get install nginx</span><br></pre></td></tr></table></figure>
-
-<p>检测Nginx的版本。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -v</span><br></pre></td></tr></table></figure>
-
-<h4 id="查看Nginx的安装目录"><a href="#查看Nginx的安装目录" class="headerlink" title="查看Nginx的安装目录"></a>查看Nginx的安装目录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whereis  nginx</span><br></pre></td></tr></table></figure>
-
-<h4 id="nginx-conf文件解读"><a href="#nginx-conf文件解读" class="headerlink" title="nginx.conf文件解读"></a>nginx.conf文件解读</h4><p>进入etc/nginx目录下，然后用vim进行打开</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/nginx</span><br><span class="line">vim nginx.conf</span><br></pre></td></tr></table></figure>
-
-<p>下面是文件的详细注释</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">#运行用户，默认即是nginx，可以不进行设置</span><br><span class="line">user  nginx;</span><br><span class="line">#Nginx进程，一般设置为和CPU核数一样</span><br><span class="line">worker_processes  1;   </span><br><span class="line">#错误日志存放目录</span><br><span class="line">error_log  /var/log/nginx/error.log warn;</span><br><span class="line">#进程pid存放位置</span><br><span class="line">pid        /var/run/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024; # 单个后台进程的最大并发数</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       /etc/nginx/mime.types;   #文件扩展名与类型映射表</span><br><span class="line">    default_type  application/octet-stream;  #默认文件类型</span><br><span class="line">    #设置日志模式</span><br><span class="line">    log_format  main  &apos;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &apos;</span><br><span class="line">                      &apos;$status $body_bytes_sent &quot;$http_referer&quot; &apos;</span><br><span class="line">                      &apos;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&apos;;</span><br><span class="line"></span><br><span class="line">    access_log  /var/log/nginx/access.log  main;   #nginx访问日志存放位置</span><br><span class="line"></span><br><span class="line">    sendfile        on;   #开启高效传输模式</span><br><span class="line">    #tcp_nopush     on;    #减少网络报文段的数量</span><br><span class="line"></span><br><span class="line">    keepalive_timeout  65;  #保持连接的时间，也叫超时时间</span><br><span class="line"></span><br><span class="line">    #gzip  on;  #开启gzip压缩</span><br><span class="line"></span><br><span class="line">    include /etc/nginx/conf.d/*.conf; #包含的子配置项位置和文件</span><br></pre></td></tr></table></figure>
-
-<p>进入conf.d目录，然后使用sudo vim /etc/nginx/sites-available/default 进行查看。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen       80;   #配置监听端口</span><br><span class="line">    server_name  localhost;  //配置域名</span><br><span class="line"></span><br><span class="line">    #charset koi8-r;     </span><br><span class="line">    #access_log  /var/log/nginx/host.access.log  main;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        root   /usr/share/nginx/html;     #服务默认启动目录</span><br><span class="line">        index  index.html index.htm;    #默认访问文件</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    #error_page  404              /404.html;   # 配置404页面</span><br><span class="line"></span><br><span class="line">    # redirect server error pages to the static page /50x.html</span><br><span class="line">    #</span><br><span class="line">    error_page   500 502 503 504  /50x.html;   #错误状态码的显示页面，配置后需要重启</span><br><span class="line">    location = /50x.html &#123;</span><br><span class="line">        root   /usr/share/nginx/html;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    # proxy the PHP scripts to Apache listening on 127.0.0.1:80</span><br><span class="line">    #</span><br><span class="line">    #location ~ \.php$ &#123;</span><br><span class="line">    #    proxy_pass   http://127.0.0.1;</span><br><span class="line">    #&#125;</span><br><span class="line"></span><br><span class="line">    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span><br><span class="line">    #</span><br><span class="line">    #location ~ \.php$ &#123;</span><br><span class="line">    #    root           html;</span><br><span class="line">    #    fastcgi_pass   127.0.0.1:9000;</span><br><span class="line">    #    fastcgi_index  index.php;</span><br><span class="line">    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span><br><span class="line">    #    include        fastcgi_params;</span><br><span class="line">    #&#125;</span><br><span class="line"></span><br><span class="line">    # deny access to .htaccess files, if Apache&apos;s document root</span><br><span class="line">    # concurs with nginx&apos;s one</span><br><span class="line">    #</span><br><span class="line">    #location ~ /\.ht &#123;</span><br><span class="line">    #    deny  all;</span><br><span class="line">    #&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>到这里我们就可以浏览到程序的页面了,看到如下图片页面，说明你都配置成功了。<br><img src="/images/J_qLKrvR7WHBcmCbWauHKK78.png" alt="avatar"></p>
-<h4 id="Nginx服务启动、停止、重启"><a href="#Nginx服务启动、停止、重启" class="headerlink" title="Nginx服务启动、停止、重启"></a>Nginx服务启动、停止、重启</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo service nginx start   启动</span><br><span class="line">sudo service nginx reload  , systemctl restart nginx.service 重启</span><br><span class="line">nginx -s quit ,  killall nginx , systemctl stop nginx.service  停止</span><br></pre></td></tr></table></figure>
-
-<h4 id="自定义错误页和访问设置"><a href="#自定义错误页和访问设置" class="headerlink" title="自定义错误页和访问设置"></a>自定义错误页和访问设置</h4><p>一个好的网站会武装到牙齿，任何错误都有给用户友好的提示。比如当网站遇到页面没有找到的时候，我们要提示页面没有找到，并给用户可返回性。错误的种类有很多，所以真正的好产品会给顾客不同的返回结果。</p>
-<h5 id="多错误指向一个页面"><a href="#多错误指向一个页面" class="headerlink" title="多错误指向一个页面"></a>多错误指向一个页面</h5><p>在/etc/nginx/conf.d/default.conf 是可以看到下面这句话的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">error_page   500 502 503 504  /50x.html;</span><br></pre></td></tr></table></figure>
-
-<h5 id="单独为错误置顶处理方式"><a href="#单独为错误置顶处理方式" class="headerlink" title="单独为错误置顶处理方式"></a>单独为错误置顶处理方式</h5><p>有些时候是要把这些错误页面单独的表现出来，给用户更好的体验。所以就要为每个错误码设置不同的页面。设置方法如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">error_page 404  /404_error.html;</span><br></pre></td></tr></table></figure>
-
-<p>然后到网站目录下新建一个404_error.html 文件，并写入一些信息。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;h1&gt;404页面没有找到!&lt;/h1&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<p>然后重启我们的服务，再进行访问，你会发现404页面发生了变化。</p>
-<h5 id="把错误码换成一个地址"><a href="#把错误码换成一个地址" class="headerlink" title="把错误码换成一个地址"></a>把错误码换成一个地址</h5><p>处理错误的时候，不仅可以只使用本服务器的资源，还可以使用外部的资源。比如我们将配置文件设置成这样。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">error_page  404 https://baidu.com;</span><br></pre></td></tr></table></figure>
-
-<h5 id="简单实现访问控制"><a href="#简单实现访问控制" class="headerlink" title="简单实现访问控制"></a>简单实现访问控制</h5><p>有时候我们的服务器只允许特定主机访问，比如内部OA系统，或者应用的管理后台系统，更或者是某些应用接口，这时候我们就需要控制一些IP访问，我们可以直接在location里进行配置。</p>
-<p>可以直接在default.conf里进行配置。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">location / &#123;</span><br><span class="line">       deny   123.9.51.42;</span><br><span class="line">       allow  45.76.202.231;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-
-<p>配置完成后，重启一下服务器就可以实现限制和允许访问了。这在工作中非常常用，一定要好好记得。</p>
-<h4 id="Nginx访问权限详讲"><a href="#Nginx访问权限详讲" class="headerlink" title="Nginx访问权限详讲"></a>Nginx访问权限详讲</h4><h5 id="指令优先级"><a href="#指令优先级" class="headerlink" title="指令优先级"></a>指令优先级</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">location / &#123;</span><br><span class="line">        allow  45.76.202.231;</span><br><span class="line">        deny   all;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面的配置表示只允许45.76.202.231进行访问，其他的IP是禁止访问的。但是如果我们把deny all指令，移动到 allow 45.76.202.231之前，会发生什么那？会发现所有的IP都不允许访问了。<strong>这说明了一个问题：就是在同一个块下的两个权限指令，先出现的设置会覆盖后出现的设置（也就是谁先触发，谁起作用）。</strong></p>
-<h5 id="复杂访问控制权限匹配"><a href="#复杂访问控制权限匹配" class="headerlink" title="复杂访问控制权限匹配"></a>复杂访问控制权限匹配</h5><p>在工作中，访问权限的控制需求更加复杂，例如，对于网站下的img（图片目录）是运行所有用户访问，但对于网站下的admin目录则只允许公司内部固定IP访问。这时候仅靠deny和allow这两个指令，是无法实现的。我们需要location块来完成相关的需求匹配。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">location =/img&#123;</span><br><span class="line">    allow all;</span><br><span class="line">&#125;</span><br><span class="line">location =/admin&#123;</span><br><span class="line">    deny all;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>=号代表精确匹配，使用了=后是根据其后的模式进行精确匹配。这个直接关系到我们网站的安全，一定要学会。</p>
-<h5 id="使用正则表达式设置访问权限"><a href="#使用正则表达式设置访问权限" class="headerlink" title="使用正则表达式设置访问权限"></a>使用正则表达式设置访问权限</h5><p>只有精确匹配有时是完不成我们的工作任务的，比如现在我们要禁止访问所有php的页面，php的页面大多是后台的管理或者接口代码，所以为了安全我们经常要禁止所有用户访问，而只开放公司内部访问的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location ~\.php$ &#123;</span><br><span class="line">    deny all;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这样我们再访问的时候就不能访问以php结尾的文件了。是不是让网站变的安全很多了那？</p>
-<h4 id="Nginx设置虚拟主机"><a href="#Nginx设置虚拟主机" class="headerlink" title="Nginx设置虚拟主机"></a>Nginx设置虚拟主机</h4><p>虚拟主机是指在一台物理主机服务器上划分出多个磁盘空间，每个磁盘空间都是一个虚拟主机，每台虚拟主机都可以对外提供Web服务，并且互不干扰。在外界看来，虚拟主机就是一台独立的服务器主机，这意味着用户能够利用虚拟主机把多个不同域名的网站部署在同一台服务器上，而不必再为简历一个网站单独购买一台服务器，既解决了维护服务器技术的难题，同时又极大地节省了服务器硬件成本和相关的维护费用。</p>
-<h5 id="基于端口号配置虚拟主机"><a href="#基于端口号配置虚拟主机" class="headerlink" title="基于端口号配置虚拟主机"></a>基于端口号配置虚拟主机</h5><p>基于端口号来配置虚拟主机，算是Nginx中最简单的一种方式了。原理就是Nginx监听多个端口，根据不同的端口号，来区分不同的网站。</p>
-<p>我们可以直接配置在主文件里etc/nginx/nginx.conf文件里， 也可以配置在子配置文件里etc/nginx/conf.d/default.conf。我这里为了配置方便，就配置在子文件里了。当然你也可以再新建一个文件，只要在conf.d文件夹下就可以了。</p>
-<p>修改配置文件中的server选项，这时候就会有两个server。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">        listen 8001;</span><br><span class="line">        server_name localhost;</span><br><span class="line">        root /usr/share/nginx/html/html8001;</span><br><span class="line">        index index.html;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="基于IP的虚拟主机"><a href="#基于IP的虚拟主机" class="headerlink" title="基于IP的虚拟主机"></a>基于IP的虚拟主机</h5><p>基于IP和基于端口的配置几乎一样，只是把server_name选项，配置成IP就可以了。</p>
-<p>比如上面的配置，我们可以修改为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">        listen 80;</span><br><span class="line">        server_name 112.74.164.244;</span><br><span class="line">        root /usr/share/nginx/html/html8001;</span><br><span class="line">        index index.html;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="Nginx使用域名设置虚拟主机"><a href="#Nginx使用域名设置虚拟主机" class="headerlink" title="Nginx使用域名设置虚拟主机"></a>Nginx使用域名设置虚拟主机</h4><p>把原来的80端口虚拟主机改为以域名划分的虚拟主机。代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen       80;</span><br><span class="line">    server_name  nginx.youSiteName.com;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们再把同目录下的8001.conf文件进行修改，改成如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">        listen 80;</span><br><span class="line">        server_name nginx2.youSiteName.com;</span><br><span class="line">        location / &#123;</span><br><span class="line">                root /usr/share/nginx/html/html8001;</span><br><span class="line">                index index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后我们用平滑重启的方式，进行重启，这时候我们在浏览器中访问这两个网页。(前提的有域名并解析所要配置的二级域名)</p>
-<h4 id="Nginx反向代理的设置"><a href="#Nginx反向代理的设置" class="headerlink" title="Nginx反向代理的设置"></a>Nginx反向代理的设置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">location ~/api &#123;</span><br><span class="line">                proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">                #proxy_set_header Host  $http_host;</span><br><span class="line">                proxy_set_header X-Forwarded-Host $host;</span><br><span class="line">                proxy_set_header X-Forwarded-Server $host;</span><br><span class="line">                proxy_set_header Host $host:$server_port;</span><br><span class="line">                proxy_set_header X-Nginx-Proxy true;</span><br><span class="line">                proxy_redirect off;</span><br><span class="line"></span><br><span class="line">                proxy_pass http://xxx;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p> “~/api”以/api的请求，“<a href="http://xxx”需要代理的接口地址" target="_blank" rel="noopener">http://xxx”需要代理的接口地址</a></p>
-<p>反向代理还有些常用的指令，</p>
-<ul>
-<li><p>proxy_set_header :在将客户端请求发送给后端服务器之前，更改来自客户端的请求头信息。</p>
-</li>
-<li><p>proxy_connect_timeout:配置Nginx与后端代理服务器尝试建立连接的超时时间。</p>
-</li>
-<li><p>proxy_read_timeout : 配置Nginx向后端服务器组发出read请求后，等待相应的超时时间。</p>
-</li>
-<li><p>proxy_send_timeout：配置Nginx向后端服务器组发出write请求后，等待相应的超时时间。</p>
-</li>
-<li><p>proxy_redirect :用于修改后端服务器返回的响应头中的Location和Refresh。</p>
-</li>
-</ul>
-<h4 id="Nginx适配PC或移动设备"><a href="#Nginx适配PC或移动设备" class="headerlink" title="Nginx适配PC或移动设备"></a>Nginx适配PC或移动设备</h4><p>现在很多网站都是有了PC端和H5站点的，因为这样就可以根据客户设备的不同，显示出体验更好的，不同的页面了。</p>
-<p>这样的需求有人说拿自适应就可以搞定，比如我们常说的bootstrap和24格布局法，这些确实是非常好的方案，但是无论是复杂性和易用性上面还是不如分开编写的好，比如我们常见的淘宝、京东……这些大型网站就都没有采用自适应，而是用分开制作的方式。</p>
-<h5 id="http-user-agent的使用："><a href="#http-user-agent的使用：" class="headerlink" title="$http_user_agent的使用："></a>$http_user_agent的使用：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">        listen 80;</span><br><span class="line">        server_name youSiteName.com;</span><br><span class="line">        location / &#123;</span><br><span class="line">         root /usr/share/nginx/pc;</span><br><span class="line">         if ($http_user_agent ~* &apos;(Android|webOS|iPhone|iPod|BlackBerry)&apos;) &#123;</span><br><span class="line">            root /usr/share/nginx/mobile;</span><br><span class="line">         &#125;</span><br><span class="line">         index index.html;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="Nginx的Gzip压缩配置"><a href="#Nginx的Gzip压缩配置" class="headerlink" title="Nginx的Gzip压缩配置"></a>Nginx的Gzip压缩配置</h4><p>Gzip是网页的一种网页压缩技术，经过gzip压缩后，页面大小可以变为原来的30%甚至更小。更小的网页会让用户浏览的体验更好，速度更快。gzip网页压缩的实现需要浏览器和服务器的支持。</p>
-<h5 id="gzip的配置项"><a href="#gzip的配置项" class="headerlink" title="gzip的配置项"></a>gzip的配置项</h5><p>Nginx提供了专门的gzip模块，并且模块中的指令非常丰富。</p>
-<ol>
-<li>gzip : 该指令用于开启或 关闭gzip模块。</li>
-<li>gzip_buffers : 设置系统获取几个单位的缓存用于存储gzip的压缩结果数据流。</li>
-<li>gzip_comp_level : gzip压缩比，压缩级别是1-9，1的压缩级别最低，9的压缩级别最高。压缩级别越高压缩率越大，压缩时间越长。</li>
-<li>gzip_disable : 可以通过该指令对一些特定的User-Agent不使用压缩功能。</li>
-<li>gzip_min_length:设置允许压缩的页面最小字节数，页面字节数从相应消息头的Content-length中进行获取。</li>
-<li>gzip_http_version：识别HTTP协议版本，其值可以是1.1.或1.0.</li>
-<li>gzip_proxied : 用于设置启用或禁用从代理服务器上收到相应内容gzip压缩。</li>
-<li>gzip_vary : 用于在响应消息头中添加Vary：Accept-Encoding,使代理服务器根据请求头中的Accept-Encoding识别是否启用gzip压缩。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">http &#123;</span><br><span class="line">   .....</span><br><span class="line">    gzip on;</span><br><span class="line">    gzip_types text/plain application/javascript text/css;</span><br><span class="line">   .....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="nginx文件上传修改默认大小-10M-gt-300M"><a href="#nginx文件上传修改默认大小-10M-gt-300M" class="headerlink" title="nginx文件上传修改默认大小(10M =&gt; 300M)"></a>nginx文件上传修改默认大小(10M =&gt; 300M)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">client_max_body_size    300M;</span><br><span class="line">client_header_buffer_size 1280000k;</span><br><span class="line">large_client_header_buffers 4000000 12800000k;</span><br></pre></td></tr></table></figure>
-
-<p>如图：<br><img src="/images/size0llo892.png" alt="avatar"></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/15/前端常用的nginx知识/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1625,7 +1470,7 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1675,6 +1520,10 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
                 友情链接
               </div>
               <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://wolveq.github.io/" title="wolveq" target="_blank">wolveq</a>
+                  </li>
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://my.oschina.net/u/1017791" title="zzx10" target="_blank">zzx10</a>
@@ -2351,5 +2200,5 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
 
   
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

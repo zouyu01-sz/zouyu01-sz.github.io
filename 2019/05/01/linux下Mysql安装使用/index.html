@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="一、系统环境 Ubuntu18.04， Mysql 5.7.25二、通过apt 安装MySQL1234#命令1sudo apt-get update#命令2sudo apt-get install mysql-server  三、配置初始化信息1sudo mysql_secure_installation  123456789101112131415161718192021222324252627">
+<meta name="description" content="一、系统环境 Ubuntu18.04， Mysql 5.7.25二、通过apt 安装MySQL1234#命令1sudo apt-get update#命令2sudo apt-get install mysql-server  三、配置初始化信息1sudo mysql_secure_installation">
 <meta name="keywords" content="Ubuntu18.04,Mysql,Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux下Mysql安装使用">
 <meta property="og:url" content="http://zouyu01sz.github.io/2019/05/01/linux下Mysql安装使用/index.html">
 <meta property="og:site_name" content="Learn个人博客-分享">
-<meta property="og:description" content="一、系统环境 Ubuntu18.04， Mysql 5.7.25二、通过apt 安装MySQL1234#命令1sudo apt-get update#命令2sudo apt-get install mysql-server  三、配置初始化信息1sudo mysql_secure_installation  123456789101112131415161718192021222324252627">
+<meta property="og:description" content="一、系统环境 Ubuntu18.04， Mysql 5.7.25二、通过apt 安装MySQL1234#命令1sudo apt-get update#命令2sudo apt-get install mysql-server  三、配置初始化信息1sudo mysql_secure_installation">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://zouyu01sz.github.io/images/alow2380d00.png">
-<meta property="og:updated_time" content="2019-08-28T07:49:16.308Z">
+<meta property="og:updated_time" content="2019-09-02T07:00:38.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux下Mysql安装使用">
-<meta name="twitter:description" content="一、系统环境 Ubuntu18.04， Mysql 5.7.25二、通过apt 安装MySQL1234#命令1sudo apt-get update#命令2sudo apt-get install mysql-server  三、配置初始化信息1sudo mysql_secure_installation  123456789101112131415161718192021222324252627">
+<meta name="twitter:description" content="一、系统环境 Ubuntu18.04， Mysql 5.7.25二、通过apt 安装MySQL1234#命令1sudo apt-get update#命令2sudo apt-get install mysql-server  三、配置初始化信息1sudo mysql_secure_installation">
 <meta name="twitter:image" content="http://zouyu01sz.github.io/images/alow2380d00.png">
 
 
@@ -420,6 +420,8 @@
 
 <h4 id="三、配置初始化信息"><a href="#三、配置初始化信息" class="headerlink" title="三、配置初始化信息"></a>三、配置初始化信息</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
+
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">Securing the MySQL server deployment.</span><br><span class="line"></span><br><span class="line">Connecting to MySQL using a blank password.</span><br><span class="line"></span><br><span class="line">VALIDATE PASSWORD PLUGIN can be used to test passwords</span><br><span class="line">and improve security. It checks the strength of password</span><br><span class="line">and allows the users to set only those passwords which are</span><br><span class="line">secure enough. Would you like to setup VALIDATE PASSWORD plugin?</span><br><span class="line"></span><br><span class="line">Press y|Y for Yes, any other key for No: N（选择N，不会进行密码的强校验）</span><br><span class="line">Please set the password for root here.</span><br><span class="line"></span><br><span class="line">New password: </span><br><span class="line"></span><br><span class="line">Re-enter new password: </span><br><span class="line">By default, a MySQL installation has an anonymous user,</span><br><span class="line">allowing anyone to log into MySQL without having to have</span><br><span class="line">a user account created for them. This is intended only for</span><br><span class="line">testing, and to make the installation go a bit smoother.</span><br><span class="line">You should remove them before moving into a production</span><br><span class="line">environment.</span><br><span class="line"></span><br><span class="line">Remove anonymous users? (Press y|Y for Yes, any other key for No) : N（选择N，不删除匿名用户）</span><br><span class="line"></span><br><span class="line"> ... skipping.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Normally, root should only be allowed to connect from</span><br><span class="line">&apos;localhost&apos;. This ensures that someone cannot guess at</span><br><span class="line">the root password from the network.</span><br><span class="line"></span><br><span class="line">Disallow root login remotely? (Press y|Y for Yes, any other key for No) : N（选择N，允许root远程连接）</span><br><span class="line"></span><br><span class="line"> ... skipping.</span><br><span class="line">By default, MySQL comes with a database named &apos;test&apos; that</span><br><span class="line">anyone can access. This is also intended only for testing,</span><br><span class="line">and should be removed before moving into a production</span><br><span class="line">environment.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Remove test database and access to it? (Press y|Y for Yes, any other key for No) : N（选择N，不删除test数据库）</span><br><span class="line"></span><br><span class="line"> ... skipping.</span><br><span class="line">Reloading the privilege tables will ensure that all changes</span><br><span class="line">made so far will take effect immediately.</span><br><span class="line"></span><br><span class="line">Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y（选择Y，修改权限立即生效）</span><br><span class="line">Success.</span><br><span class="line"></span><br><span class="line">All done!</span><br></pre></td></tr></table></figure>
 
 <p>查看数据库是否安装成功</p>
@@ -593,7 +595,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -643,6 +645,10 @@
                 友情链接
               </div>
               <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://wolveq.github.io/" title="wolveq" target="_blank">wolveq</a>
+                  </li>
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://my.oschina.net/u/1017791" title="zzx10" target="_blank">zzx10</a>
@@ -1339,5 +1345,5 @@
 
   
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>
