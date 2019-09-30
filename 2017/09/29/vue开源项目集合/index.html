@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="vue,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="UI组件 element 饿了么出品的Vue2的web UI工具套件 Vux  基于Vue和WeUI的组件库 iview   基于 Vuejs 的开源 UI 组件库 mint-ui   Vue 2的移动UI元素 muse-ui  三端样式一致的响应式 UI 库 vue-material 通过Vue Material和Vue 2建立精美的app应用 vuetify 为移动而生的Vue JS 2组件框">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue开源项目集合">
+<meta property="og:url" content="http://zouyu01-sz.github.io/2017/09/29/vue开源项目集合/index.html">
+<meta property="og:site_name" content="Learn个人博客-分享">
+<meta property="og:description" content="UI组件 element 饿了么出品的Vue2的web UI工具套件 Vux  基于Vue和WeUI的组件库 iview   基于 Vuejs 的开源 UI 组件库 mint-ui   Vue 2的移动UI元素 muse-ui  三端样式一致的响应式 UI 库 vue-material 通过Vue Material和Vue 2建立精美的app应用 vuetify 为移动而生的Vue JS 2组件框">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-30T02:59:15.127Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vue开源项目集合">
+<meta name="twitter:description" content="UI组件 element 饿了么出品的Vue2的web UI工具套件 Vux  基于Vue和WeUI的组件库 iview   基于 Vuejs 的开源 UI 组件库 mint-ui   Vue 2的移动UI元素 muse-ui  三端样式一致的响应式 UI 库 vue-material 通过Vue Material和Vue 2建立精美的app应用 vuetify 为移动而生的Vue JS 2组件框">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zouyu01-sz.github.io/2017/09/29/vue开源项目集合/">
+
+
+
+
+
+  <title>vue开源项目集合 | Learn个人博客-分享</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+      <a href="https://github.com/zouyu01-sz/zouyu01-sz.github.io">     
+        <img style="position: absolute; top: 0;
+        right: 0; border: 0;" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" alt="Fork me on GitHub" data-canonical->
+      </a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Learn个人博客-分享</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-首页">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-标签">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-分类">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-日志">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            日志
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zouyu01-sz.github.io/2017/09/29/vue开源项目集合/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Learn">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Learn个人博客-分享">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">vue开源项目集合</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-29T16:38:15+08:00">
+                2017-09-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Vue/" itemprop="url" rel="index">
+                    <span itemprop="name">Vue</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/29/vue开源项目集合/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/09/29/vue开源项目集合/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/09/29/vue开源项目集合/" class="leancloud_visitors" data-flag-title="vue开源项目集合">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="UI组件"><a href="#UI组件" class="headerlink" title="UI组件"></a>UI组件</h4><ol>
+<li><a href="https://element.eleme.cn/#/zh-CN/component/installation" target="_blank" rel="noopener">element</a> 饿了么出品的Vue2的web UI工具套件</li>
+<li><a href="https://doc.vux.li/zh-CN/" target="_blank" rel="noopener">Vux</a>  基于Vue和WeUI的组件库</li>
+<li><a href="https://www.iviewui.com/docs/guide/install" target="_blank" rel="noopener">iview</a>   基于 Vuejs 的开源 UI 组件库</li>
+<li><a href="http://mint-ui.github.io/docs/#/" target="_blank" rel="noopener">mint-ui</a>   Vue 2的移动UI元素</li>
+<li><a href="https://github.com/museui/muse-ui" target="_blank" rel="noopener">muse-ui</a>  三端样式一致的响应式 UI 库</li>
+<li><a href="https://vuematerial.io/components/chips" target="_blank" rel="noopener">vue-material</a> 通过Vue Material和Vue 2建立精美的app应用</li>
+<li><a href="https://github.com/vuetifyjs/vuetify" target="_blank" rel="noopener">vuetify</a> 为移动而生的Vue JS 2组件框架</li>
+<li><a href="https://github.com/JosephusPaye/Keen-UI" target="_blank" rel="noopener">Keen-UI</a> - 轻量级的基本UI组件合集</li>
+<li><a href="https://github.com/shentao/vue-multiselect" target="_blank" rel="noopener">vue-multiselect</a> - Vue.js选择框解决方案</li>
+<li><a href="https://github.com/egoist/eme" target="_blank" rel="noopener">eme</a> - 优雅的Markdown编辑器</li>
+<li><a href="https://github.com/pi0/bootstrap-vue" target="_blank" rel="noopener">bootstrap-vue</a> 应用于Vuejs2的Twitter的Bootstrap 4组件</li>
+<li><a href="https://github.com/David-Desmaisons/Vue.Draggable" target="_blank" rel="noopener">Vue.Draggable</a> - 实现拖放和视图模型数组同步</li>
+<li><a href="https://github.com/Zulko/eagle.js" target="_blank" rel="noopener">eagle.js</a> - hacker的幻灯片演示框架</li>
+<li><a href="https://github.com/surmon-china/vue-awesome-swiper" target="_blank" rel="noopener">vue-awesome-swiper</a> - vue.js触摸滑动组件</li>
+<li><a href="https://github.com/ratiw/vue-table" target="_blank" rel="noopener">vue-table</a> - 简化数据表格</li>
+<li><a href="https://github.com/Coffcer/vue-chat" target="_blank" rel="noopener">vue-chat</a> - vuejs和vuex及webpack的聊天示例</li>
+<li><a href="https://chenz24.github.io/vue-blu/#/" target="_blank" rel="noopener">vue-blu</a> 帮助你轻松创建web应用</li>
+<li><a href="https://github.com/OYsun/VueCircleMenu" target="_blank" rel="noopener">VueCircleMenu</a> - 漂亮的vue圆环菜单</li>
+<li><a href="https://github.com/ElemeFE/vue-infinite-scroll" target="_blank" rel="noopener">vue-infinite-scroll</a> - VueJS的无限滚动指令</li>
+<li><a href="https://github.com/buefy/buefy" target="_blank" rel="noopener">buefy</a> - 响应式UI组件轻量级库</li>
+<li><a href="https://github.com/FE-Driver/vue-beauty" target="_blank" rel="noopener">vue-beauty</a> - 由vue和ant design创建的优美UI组件</li>
+<li><a href="https://github.com/MopTym/vue-waterfall" target="_blank" rel="noopener">vue-waterfall</a> - Vue.js的瀑布布局组件</li>
+<li><a href="https://github.com/luojilab/radon-ui" target="_blank" rel="noopener">radon-ui</a> - 快速开发产品的Vue组件库</li>
+<li><a href="https://github.com/JosephSmith127/vue-loop" target="_blank" rel="noopener">vue-loop</a> - 无限的内容循环</li>
+<li><a href="https://github.com/apertureless/vue-chartjs" target="_blank" rel="noopener">vue-chartjs</a> - vue中的Chartjs的封装</li>
+</ol>
+<a id="more"></a>
+
+<li><a href="https://github.com/myronliu347/vue-carbon" target="_blank" rel="nofollow">vue-carbon</a> ★684 - 基于 vue 开发MD风格的移动端</li>
+<li>
+<a href="https://github.com/vuejs/vue-syntax-highlight" target="_blank" rel="nofollow">vue-syntax-highlight</a> ★655 - Sublime Text语法高亮</li>
+<li>
+<a href="https://github.com/Justineo/vue-echarts" target="_blank" rel="nofollow">vue-echarts</a> ★649 - VueJS的ECharts组件</li>
+<li>
+<a href="https://github.com/surmon-china/vue-quill-editor" target="_blank" rel="nofollow">vue-quill-editor</a> ★615 - 基于Quill适用于Vue2的富文本编辑器</li>
+<li>
+<a href="https://github.com/ElemeFE/vue-amap" target="_blank" rel="nofollow">vue-amap</a> ★571 - 基于Vue 2和高德地图的地图组件</li>
+<li>
+<a href="https://github.com/jinzhe/vue-calendar" target="_blank" rel="nofollow">vue-calendar</a> ★536 - 日期选择插件</li>
+<li>
+<a href="https://github.com/PeachScript/vue-infinite-loading" target="_blank" rel="nofollow">vue-infinite-loading</a> ★501 - VueJS的无限滚动插件</li>
+<li>
+<a href="https://github.com/ElemeFE/vue-swipe" target="_blank" rel="nofollow">vue-swipe</a> ★481 - VueJS触摸滑块</li>
+<li>
+<a href="https://github.com/microzz/vue-music-player" target="_blank" rel="nofollow">vue-music-player</a> ★451 - Vuejs写一个音乐播放器</li>
+<li>
+<a href="https://github.com/wangdahoo/vue-scroller" target="_blank" rel="nofollow">vue-scroller</a> ★444 - Vonic UI的功能性组件</li>
+<li>
+<a href="https://github.com/hilongjw/vue-datepicker" target="_blank" rel="nofollow">vue-datepicker</a> ★436 - 日历和日期选择组件</li>
+<li>
+<a href="https://github.com/Vanthink-UED/vue-core-image-upload" target="_blank" rel="nofollow">vue-core-image-upload</a> ★393 - 轻量级的vue上传插件</li>
+<li>
+<a href="https://github.com/hilongjw/vue-progressbar" target="_blank" rel="nofollow">vue-progressbar</a> ★379 - vue轻量级进度条</li>
+<li>
+<a href="https://github.com/Zhangdroid/Gokotta" target="_blank" rel="nofollow">Gokotta</a> ★375 - 简单的音乐播放器</li>
+<li>
+<a href="https://github.com/sagalbot/vue-sortable" target="_blank" rel="nofollow">vue-sortable</a> ★373 - 轻松添加拖拽排序</li>
+<li>
+<a href="https://github.com/alessiomaffeis/vue-picture-input" target="_blank" rel="nofollow">vue-picture-input</a> ★352 - 移动友好的图片文件输入组件</li>
+<li>
+<a href="https://github.com/xlsdg/vue-echarts-v3" target="_blank" rel="nofollow">vue-echarts-v3</a> ★351 - VueJS组件封装</li>
+<li>
+<a href="https://github.com/jrainlau/markcook" target="_blank" rel="nofollow">markcook</a> ★343 - 好看的markdown编辑器</li>
+<li>
+<a href="https://github.com/surmon-china/vue-video-player" target="_blank" rel="nofollow">vue-video-player</a> ★336 - VueJS视频及直播播放器</li>
+<li>
+<a href="https://github.com/GuillaumeLeclerc/vue-google-maps" target="_blank" rel="nofollow">vue-google-maps</a> ★334 - 带有双向数据绑定Google地图组件</li>
+<li>
+<a href="https://github.com/QingWei-Li/vue-trend" target="_blank" rel="nofollow">vue-trend</a> ★332 - 简单优雅的星光线条</li>
+<li>
+<a href="https://github.com/charliekassel/vuejs-datepicker" target="_blank" rel="nofollow">vuejs-datepicker</a> ★314 - vue日期选择器组件</li>
+<li>
+<a href="https://github.com/Wanderxx/vue-fullcalendar" target="_blank" rel="nofollow">vue-fullcalendar</a> ★313 - 基于vue.js的全日历组件</li>
+<li>
+<a href="https://github.com/PeakTai/vue-html5-editor" target="_blank" rel="nofollow">vue-html5-editor</a> ★303 - html5所见即所得编辑器</li>
+<li>
+<a href="https://github.com/lian-yue/vue-upload-component" target="_blank" rel="nofollow">vue-upload-component</a> ★298 - Vuejs文件上传组件</li>
+<li>
+<a href="https://github.com/SimonZhangITer/DataVisualization" target="_blank" rel="nofollow">DataVisualization</a> ★298 - 数据可视化</li>
+<li>
+<a href="https://github.com/matfish2/vue-tables-2" target="_blank" rel="nofollow">vue-tables-2</a> ★291 - 显示数据的bootstrap样式网格</li>
+<li>
+<a href="https://github.com/OYsun/VueStar" target="_blank" rel="nofollow">VueStar</a> ★270 - 带星星动画的vue点赞按钮</li>
+<li>
+<a href="https://github.com/njleonzhang/vue-data-tables" target="_blank" rel="nofollow">vue-data-tables</a> ★266 - VueJS2数据表格</li>
+<li>
+<a href="https://github.com/TahaSh/vue-paginate" target="_blank" rel="nofollow">vue-paginate</a> ★261 - 分页数据的简约VueJS插件</li>
+<li>
+<a href="https://github.com/ydcss/vue-ydui" target="_blank" rel="nofollow">vue-ydui</a> ★247 - 基于Vue2的移动端和微信UI</li>
+<li>
+<a href="https://github.com/egoist/vue-mugen-scroll" target="_blank" rel="nofollow">vue-mugen-scroll</a> ★239 - 无限滚动组件</li>
+<li>
+<a href="https://github.com/Akryum/vue-virtual-scroller" target="_blank" rel="nofollow">vue-virtual-scroller</a> ★238 - 带任意数目数据的顺畅的滚动</li>
+<li>
+<a href="https://github.com/icai/vue2-calendar" target="_blank" rel="nofollow">vue2-calendar</a> ★236 - 支持lunar和日期事件的日期选择器</li>
+<li>
+<a href="https://github.com/rowanwins/vue-dropzone" target="_blank" rel="nofollow">vue-dropzone</a> ★233 - 用于文件上传的Vue组件</li>
+<li>
+<a href="https://github.com/Awheat/vue2-douban-market" target="_blank" rel="nofollow">vue2-douban-market</a> ★233 - 仿豆瓣市集webapp项目</li>
+<li>
+<a href="https://github.com/euvl/vue-js-modal" target="_blank" rel="nofollow">vue-js-modal</a> ★228 - 移动友好的Vuejs2的modal</li>
+<li>
+<a href="https://github.com/warpcgd/vue-slider" target="_blank" rel="nofollow">vue-slider</a> ★224 - vue 滑动组件</li>
+<li>
+<a href="https://github.com/Haixing-Hu/vue-datetime-picker" target="_blank" rel="nofollow">vue-datetime-picker</a> ★224 - 日期时间选择控件</li>
+<li>
+<a href="https://github.com/ccforward/rubik" target="_blank" rel="nofollow">rubik</a> ★217 - 基于Vuejs2的开源 UI 组件库</li>
+<li>
+<a href="https://github.com/coderdiaz/vue-datasource" target="_blank" rel="nofollow">vue-datasource</a> ★210 - 创建VueJS动态表格</li>
+<li>
+<a href="https://github.com/dai-siki/vue-image-crop-upload" target="_blank" rel="nofollow">vue-image-crop-upload</a> ★205 - vue图片剪裁上传组件</li>
+<li>
+<a href="https://github.com/hifarer/Vueditor" target="_blank" rel="nofollow">Vueditor</a> ★204 - 所见即所得的编辑器</li>
+<li>
+<a href="https://github.com/mint-ui/mint-loadmore" target="_blank" rel="nofollow">mint-loadmore</a> ★203 - VueJS的双向下拉刷新组件</li>
+<li>
+<a href="https://github.com/NightCatSama/vue-slider-component" target="_blank" rel="nofollow">vue-slider-component</a> ★202 - 在vue1和vue2中使用滑块</li>
+<li>
+<a href="https://github.com/microzz/vue-chat" target="_blank" rel="nofollow">vue-chat</a> ★200 - Vue全家桶+Socket.io+Express/Koa2打造一个智能聊天室</li>
+<li>
+<a href="https://github.com/hinesboy/mavonEditor" target="_blank" rel="nofollow">mavonEditor</a> ★179 - 基于Vue的markdown编辑器</li>
+<li>
+<a href="https://github.com/Wlada/vue-carousel-3d" target="_blank" rel="nofollow">vue-carousel-3d</a> ★173 - VueJS的3D轮播组件</li>
+<li>
+<a href="https://github.com/Dafrok/vue-baidu-map" target="_blank" rel="nofollow">vue-baidu-map</a> ★170 - 基于 Vue 2的百度地图组件库</li>
+<li>
+<a href="https://github.com/adeptoas/sweet-modal-vue" target="_blank" rel="nofollow">sweet-modal-vue</a> ★170 - 精美的点击提示对话框</li>
+<li>
+<a href="https://github.com/creotip/vue-particles" target="_blank" rel="nofollow">vue-particles</a> ★168 - 粒子背景的vue组件</li>
+<li>
+<a href="https://github.com/weilao/vue-swiper" target="_blank" rel="nofollow">vue-swiper</a> ★167 - 易于使用的滑块组件</li>
+<li>
+<a href="https://github.com/F-loat/vue-simplemde" target="_blank" rel="nofollow">vue-simplemde</a> ★166 - VueJS的Markdown编辑器组件</li>
+<li>
+<a href="https://github.com/hilongjw/vue-slide" target="_blank" rel="nofollow">vue-slide</a> ★161 - vue轻量级滑动组件</li>
+<li>
+<a href="https://github.com/Astray-git/vue-dragula" target="_blank" rel="nofollow">vue-dragula</a> ★157 - 使拖放变得简单</li>
+<li>
+<a href="https://github.com/Alex-fun/vue-drag-and-drop-list" target="_blank" rel="nofollow">vue-drag-and-drop-list</a> ★156 - 创建排序列表的Vue指令</li>
+<li>
+<a href="https://github.com/davidroyer/vue2-editor" target="_blank" rel="nofollow">vue2-editor</a> ★155 - HTML编辑器</li>
+<li>
+<a href="https://github.com/hchstera/vue-charts" target="_blank" rel="nofollow">vue-charts</a> ★152 - 轻松渲染一个图表</li>
+<li>
+<a href="https://github.com/LucienLee/vue-data-grid" target="_blank" rel="nofollow">vue-data-grid</a> ★151 - VueJS复杂桌面交互示例</li>
+<li>
+<a href="https://github.com/vuwe/vuwe" target="_blank" rel="nofollow">vuwe</a> ★150 - 基于微信WeUI所开发的专用于Vue2的组件库</li>
+<li>
+<a href="https://github.com/MatteoGabriele/vue-progressive-image" target="_blank" rel="nofollow">vue-progressive-image</a> ★148 - Vue的渐进图像加载插件</li>
+<li>
+<a href="https://github.com/ElemeFE/vue-msgbox" target="_blank" rel="nofollow">vue-msgbox</a> ★148 - vuejs的消息框</li>
+<li>
+<a href="https://github.com/JALBAA/vue-lazyload-img" target="_blank" rel="nofollow">vue-lazyload-img</a> ★147 - 移动优化的vue图片懒加载插件</li>
+<li>
+<a href="https://github.com/hilongjw/vue-dragging" target="_blank" rel="nofollow">vue-dragging</a> ★146 - 使元素可以拖拽</li>
+<li>
+<a href="https://github.com/santiblanko/vue-instant" target="_blank" rel="nofollow">vue-instant</a> ★143 - 轻松创建自动提示的自定义搜索控件</li>
+<li>
+<a href="https://github.com/nicolasbeauvais/vue-social-sharing" target="_blank" rel="nofollow">vue-social-sharing</a> ★142 - 社交分享组件</li>
+<li>
+<a href="https://github.com/littlewin-wang/vue-images" target="_blank" rel="nofollow">vue-images</a> ★139 - 显示一组图片的lightbox组件</li>
+<li>
+<a href="https://github.com/NewDadaFE/vue-impression" target="_blank" rel="nofollow">vue-impression</a> ★134 - 移动Vuejs2 UI元素</li>
+<li>
+<a href="https://github.com/ovenslove/vue-mdEditor" target="_blank" rel="nofollow">vue-mdEditor</a> ★131 - 基于VUE的markdown文本编辑器</li>
+<li>
+<a href="https://github.com/cngu/vue-typer" target="_blank" rel="nofollow">vue-typer</a> ★130 - 模拟用户输入选择和删除文本的Vue组件</li>
+<li>
+<a href="https://github.com/weizhenye/vue-highcharts" target="_blank" rel="nofollow">vue-highcharts</a> ★130 - HighCharts组件</li>
+<li>
+<a href="https://github.com/Akryum/vue-tooltip" target="_blank" rel="nofollow">vue-tooltip</a> ★129 - 带绑定信息提示的提示工具</li>
+<li>
+<a href="https://github.com/MMF-FE/vue-svgicon" target="_blank" rel="nofollow">vue-svgicon</a> ★127 - 创建svg图标组件的工具</li>
+<li>
+<a href="https://github.com/wdfe/wdui" target="_blank" rel="nofollow">wdui</a> ★124 - 基于Vue2的UI组件库</li>
+<li>
+<a href="https://github.com/BosNaufal/vue2-loading-bar" target="_blank" rel="nofollow">vue2-loading-bar</a> ★118 - 最简单的仿Youtube加载条视图</li>
+<li>
+<a href="https://github.com/spatie/vue-tabs-component" target="_blank" rel="nofollow">vue-tabs-component</a> ★116 - 渲染tabs的Vue组件</li>
+<li>
+<a href="https://github.com/hzzly/MagicMusic" target="_blank" rel="nofollow">MagicMusic</a> ★113 - 不一样的音乐</li>
+<li>
+<a href="https://github.com/QingWei-Li/vue-region-picker" target="_blank" rel="nofollow">vue-region-picker</a> ★111 - 选择中国的省份市和地区</li>
+<li>
+<a href="https://github.com/galenyuan/vue-datatable" target="_blank" rel="nofollow">vue-datatable</a> ★102 - 使用Vuejs创建的DataTableView</li>
+<li>
+<a href="https://github.com/Coffcer/vue-loading" target="_blank" rel="nofollow">vue-loading</a> ★102 - 元素中加载block的Vue指令</li>
+<li>
+<a href="https://github.com/chenjiahan/vodal" target="_blank" rel="nofollow">vodal</a> ★99 - 动画的vue模态</li>
+<li>
+<a href="https://github.com/waynecz/vue-img-inputer" target="_blank" rel="nofollow">vue-img-inputer</a> ★97 - 基于Vue2的图片输入框</li>
+<li>
+<a href="https://github.com/hilongjw/vue-video" target="_blank" rel="nofollow">vue-video</a> ★96 - Vue.js的HTML5视频播放器</li>
+<li>
+<a href="https://github.com/surmon-china/vue-touch-ripple" target="_blank" rel="nofollow">vue-touch-ripple</a> ★95 - vuejs的触摸ripple组件</li>
+<li>
+<a href="https://github.com/GeoffZhu/vue-event-calendar" target="_blank" rel="nofollow">vue-event-calendar</a> ★91 - 简单小巧的事件日历组件</li>
+<li>
+<a href="https://github.com/luiguild/v-bar" target="_blank" rel="nofollow">v-bar</a> ★91 - 虚拟响应跨浏览器滚动条</li>
+<li>
+<a href="https://github.com/phoenixwong/vue2-timepicker" target="_blank" rel="nofollow">vue2-timepicker</a> ★84 - 下拉时间选择器</li>
+<li>
+<a href="https://github.com/lokyoung/vuejs-paginate" target="_blank" rel="nofollow">vuejs-paginate</a> ★80 - 分页VueJS组件</li>
+<li>
+<a href="https://github.com/ElemeFE/vue-toast-mobile" target="_blank" rel="nofollow">vue-toast-mobile</a> ★79 - VueJS的toast插件</li>
+<li>
+<a href="https://github.com/weifeiyue/vue-datepicker" target="_blank" rel="nofollow">vue-datepicker</a> ★78 - 漂亮的Vue日期选择器组件</li>
+<li>
+<a href="https://github.com/shhdgit/vue-easy-slider" target="_blank" rel="nofollow">vue-easy-slider</a> ★77 - Vue 2.x的滑块组件</li>
+<li>
+<a href="https://github.com/bkzl/vue-float-label" target="_blank" rel="nofollow">vue-float-label</a> ★76 - VueJS浮动标签模式</li>
+<li>
+<a href="https://github.com/BosNaufal/vue-scrollbar" target="_blank" rel="nofollow">vue-scrollbar</a> ★76 - 最简单的滚动区域组件</li>
+<li>
+<a href="https://github.com/youzan/vant" target="_blank" rel="nofollow">vant</a> ★74 - 有赞出品的Vue2.0移动UI</li>
+<li>
+<a href="https://github.com/arvidkahl/vue-json-tree-view" target="_blank" rel="nofollow">vue-json-tree-view</a> ★74 - Vue的JSON树视图</li>
+<li>
+<a href="https://github.com/staskjs/vue-slick" target="_blank" rel="nofollow">vue-slick</a> ★73 - 实现流畅轮播框的vue组件</li>
+<li>
+<a href="https://github.com/znck/vue-keynote" target="_blank" rel="nofollow">vue-keynote</a> ★73 - 实现声明性代码幻灯片</li>
+<li>
+<a href="https://github.com/phanan/vue-google-signin-button" target="_blank" rel="nofollow">vue-google-signin-button</a> ★73 - 导入谷歌登录按钮</li>
+<li>
+<a href="https://github.com/SinanMtl/vue-rate" target="_blank" rel="nofollow">vue-rate</a> ★68 - Vue评分组件</li>
+<li>
+<a href="https://github.com/moip/awesome-mask" target="_blank" rel="nofollow">awesome-mask</a> ★67 - 拥有独一无二mask的表单</li>
+<li>
+<a href="https://github.com/wyzant-dev/vue-radial-progress" target="_blank" rel="nofollow">vue-radial-progress</a> ★65 - Vue.js放射性进度条组件</li>
+<li>
+<a href="https://github.com/CroudSupport/vue-quill" target="_blank" rel="nofollow">vue-quill</a> ★65 - vue组件构建quill编辑器</li>
+<li>
+<a href="https://github.com/Bubblings/vue-date-picker" target="_blank" rel="nofollow">vue-date-picker</a> ★63 - VueJS日期选择器组件</li>
+<li>
+<a href="https://github.com/Kocisov/coffeebreak" target="_blank" rel="nofollow">coffeebreak</a> ★62 - 实时编辑CSS组件工具</li>
+<li>
+<a href="https://github.com/xaksis/vue-good-wizard" target="_blank" rel="nofollow">vue-good-wizard</a> ★61 - VueJS 2.x wizard plugin</li>
+<li>
+<a href="https://github.com/jkchao/vue-loading" target="_blank" rel="nofollow">vue-loading</a> ★60 - 使用SVG加载</li>
+<li>
+<a href="https://github.com/vue-bulma/datepicker" target="_blank" rel="nofollow">datepicker</a> ★59 - 基于flatpickr的时间选择组件</li>
+<li>
+<a href="https://github.com/lithiumjake/vue-placeholders" target="_blank" rel="nofollow">vue-placeholders</a> ★58 - 处理占位符图片和乱码</li>
+<li>
+<a href="https://github.com/tianyong90/we-vue" target="_blank" rel="nofollow">we-vue</a> ★55 - Vue2及weui1开发的组件</li>
+<li>
+<a href="https://github.com/CroudSupport/vue-fullcalendar" target="_blank" rel="nofollow">vue-fullcalendar</a> ★55 - vue FullCalendar封装</li>
+<li>
+<a href="https://github.com/ankane/vue-chartkick" target="_blank" rel="nofollow">vue-chartkick</a> ★53 - VueJS一行代码实现优美图表</li>
+<li>
+<a href="https://github.com/chengxulvtu/cxlt-vue2-toastr" target="_blank" rel="nofollow">cxlt-vue2-toastr</a> ★52 - 弹出提示的Vue2组件</li>
+<li>
+<a href="https://github.com/formly-js/vue-formly" target="_blank" rel="nofollow">vue-formly</a> ★51 - VueJS的JS表单</li>
+<li>
+<a href="https://github.com/BosNaufal/vue2-autocomplete" target="_blank" rel="nofollow">vue2-autocomplete</a> ★51 - vue2的自动完成组件</li>
+<li>
+<a href="https://github.com/bbonnin/vue-morris" target="_blank" rel="nofollow">vue-morris</a> ★50 - Vuejs组件封装Morrisjs库</li>
+<li>
+<a href="https://github.com/ecomfe/veui" target="_blank" rel="nofollow">veui</a> ★50 - VueJS百度企业UI</li>
+<li>
+<a href="https://github.com/yunfeihuang/vue-components" target="_blank" rel="nofollow">vue-components</a> ★49 - 移动端UI组件库</li>
+<li>
+<a href="https://github.com/craigh411/vue-star-rating" target="_blank" rel="nofollow">vue-star-rating</a> ★49 - 简单高度自定义的星星评级组件</li>
+<li>
+<a href="https://github.com/Ginhing/vue-tagsinput" target="_blank" rel="nofollow">vue-tagsinput</a> ★48 - 基于VueJS的标签组件</li>
+<li>
+<a href="https://github.com/alexqdjay/vue-tabs" target="_blank" rel="nofollow">vue-tabs</a> ★47 - 多tab页轻型框架</li>
+<li>
+<a href="https://github.com/myronliu347/vue-popup-mixin" target="_blank" rel="nofollow">vue-popup-mixin</a> ★47 - 用于管理弹出框的遮盖层</li>
+<li>
+<a href="https://github.com/PygmySlowLoris/vue-ripple-directive" target="_blank" rel="nofollow">vue-ripple-directive</a> ★45 - 使用Vue指令的Material波纹效果</li>
+<li>
+<a href="https://github.com/xyxiao001/vue-cropper" target="_blank" rel="nofollow">vue-cropper</a> ★42 - 一个简单的vue 的图片裁剪插件</li>
+<li>
+<a href="https://github.com/lisiyizu/vue-ztree" target="_blank" rel="nofollow">vue-ztree</a> ★41 - 用 vue 写的树层级组件</li>
+<li>
+<a href="https://github.com/icebob/vue-touch-keyboard" target="_blank" rel="nofollow">vue-touch-keyboard</a> ★41 - VueJS虚拟键盘组件</li>
+<li>
+<a href="https://github.com/fangyongbao/cubeex" target="_blank" rel="nofollow">cubeex</a> ★40 - 包含一套完整的移动UI</li>
+<li>
+<a href="https://github.com/miaolz123/vue-chart" target="_blank" rel="nofollow">vue-chart</a> ★40 - 强大的高速的vue图表解析</li>
+<li>
+<a href="https://github.com/yunyi1895/vue-music-master" target="_blank" rel="nofollow">vue-music-master</a> ★40 - vue手机端网页音乐播放器</li>
+<li>
+<a href="https://github.com/jbaysolutions/vue-bootstrap-table" target="_blank" rel="nofollow">vue-bootstrap-table</a> ★39 - 可排序可检索的表格</li>
+<li>
+<a href="https://github.com/jkchao/vue-emoji" target="_blank" rel="nofollow">vue-emoji</a> ★39 - 好用的emoji插件</li>
+<li>
+<a href="https://github.com/vue-bulma/handsontable" target="_blank" rel="nofollow">handsontable</a> ★39 - 网页表格组件</li>
+<li>
+<a href="https://github.com/matfish2/vue-form-2" target="_blank" rel="nofollow">vue-form-2</a> ★37 - 全面的HTML表单管理的解决方案</li>
+<li>
+<a href="https://github.com/blue0728/vue-area" target="_blank" rel="nofollow">vue-area</a> ★37 - 省市区三级联动插件</li>
+<li>
+<a href="https://github.com/vue-comps/vue-side-nav" target="_blank" rel="nofollow">vue-side-nav</a> ★37 - 响应式的侧边导航</li>
+<li>
+<a href="https://github.com/ShanaMaid/vue-image-scroll" target="_blank" rel="nofollow">vue-image-scroll</a> ★36 - 仿网易云音乐的vue图片滚动插件</li>
+<li>
+<a href="https://github.com/bajian/vue-pull-to-refresh" target="_blank" rel="nofollow">vue-pull-to-refresh</a> ★35 - Vue2的上拉下拉</li>
+<li>
+<a href="https://github.com/mint-ui/mint-indicator" target="_blank" rel="nofollow">mint-indicator</a> ★35 - VueJS移动加载指示器插件</li>
+<li>
+<a href="https://github.com/legeneek/vue-image-clip" target="_blank" rel="nofollow">vue-image-clip</a> ★34 - 基于vue的图像剪辑组件</li>
+<li>
+<a href="https://github.com/loujiayu/vue-material-design" target="_blank" rel="nofollow">vue-material-design</a> ★34 - Vue MD风格组件</li>
+<li>
+<a href="https://github.com/saivarunk/vue-simple-upload" target="_blank" rel="nofollow">vue-simple-upload</a> ★31 - 简单的VueJS上传组件</li>
+<li>
+<a href="https://github.com/vue-bulma/chartjs" target="_blank" rel="nofollow">chartjs</a> ★29 - Vue Bulma的chartjs组件</li>
+<li>
+<a href="https://github.com/darrynten/vue-lazy-background-images" target="_blank" rel="nofollow">vue-lazy-background-images</a> ★29 - 懒加载背景组件的Vue组件</li>
+<li>
+<a href="https://github.com/BosNaufal/vue-ripple" target="_blank" rel="nofollow">vue-ripple</a> ★29 - 制作谷歌MD风格涟漪效果的Vue组件</li>
+<li>
+<a href="https://github.com/suguangwen/vue-scroll" target="_blank" rel="nofollow">vue-scroll</a> ★27 - vue滚动</li>
+<li>
+<a href="https://github.com/gilbitron/laravel-vue-pagination" target="_blank" rel="nofollow">laravel-vue-pagination</a> ★26 - VueJS分页组件</li>
+<li>
+<a href="https://github.com/dai-siki/vue-datepicker-simple" target="_blank" rel="nofollow">vue-datepicker-simple</a> ★26 - 基于vue的日期选择器</li>
+<li>
+<a href="https://github.com/shiye515/vue-m-carousel" target="_blank" rel="nofollow">vue-m-carousel</a> ★26 - vue 移动端轮播组件</li>
+<li>
+<a href="https://github.com/vue-comps/vue-parallax" target="_blank" rel="nofollow">vue-parallax</a> ★23 - 整洁的视觉效果</li>
+<li>
+<a href="https://github.com/JackGit/vue-img-loader" target="_blank" rel="nofollow">vue-img-loader</a> ★22 - 图片加载UI组件</li>
+<li>
+<a href="https://github.com/weibangtuo/vue-tree" target="_blank" rel="nofollow">vue-tree</a> ★22 - vue树视图组件</li>
+<li>
+<a href="https://github.com/aweiu/vue-verify-pop" target="_blank" rel="nofollow">vue-verify-pop</a> ★22 - 带气泡提示的vue校验插件</li>
+<li>
+<a href="https://github.com/Teddy-Zhu/vue-waves" target="_blank" rel="nofollow">vue-waves</a> ★22 - waves的VueJS版本</li>
+<li>
+<a href="https://github.com/Teddy-Zhu/vue-smoothscroll" target="_blank" rel="nofollow">vue-smoothscroll</a> ★20 - smoothscroll的VueJS版本</li>
+<li>
+<a href="https://github.com/xinxingyu/vue-city" target="_blank" rel="nofollow">vue-city</a> ★19 - 城市选择器</li>
+<li>
+<a href="https://github.com/sinchang/vue-laypage" target="_blank" rel="nofollow">vue-laypage</a> ★17 - 简单的VueJS分页组件</li>
+<li>
+<a href="https://github.com/eduardostuart/vue-typewriter" target="_blank" rel="nofollow">vue-typewriter</a> ★15 - vue组件类型</li>
+<li>
+<a href="https://github.com/Treri/vue-ios-alertview" target="_blank" rel="nofollow">vue-ios-alertview</a> ★14 - iOS7+ 风格的alertview服务</li>
+<li>
+<a href="https://github.com/doodlewind/vue-cmap" target="_blank" rel="nofollow">vue-cmap</a> ★14 - Vue China map可视化组件</li>
+<li>
+<a href="https://github.com/yeseason/paco-ui-vue" target="_blank" rel="nofollow">paco-ui-vue</a> ★12 - PACOUI的vue组件</li>
+<li>
+<a href="https://github.com/savokiss/vue-cascading-address" target="_blank" rel="nofollow">vue-cascading-address</a> ★9 - vue地区选择器</li>
+<li>
+<a href="https://github.com/ibufu/dd-vue-component" target="_blank" rel="nofollow">dd-vue-component</a> ★7 - 订单来了的公共组件库</li>
+<li>
+<a href="https://github.com/steven5538/vue-button" target="_blank" rel="nofollow">vue-button</a> ★5 - Vue按钮组件</li>
+
+
+<h4 id="开发框架"><a href="#开发框架" class="headerlink" title="开发框架"></a>开发框架</h4><li>
+<a href="https://github.com/vuejs/vue" target="_blank" rel="nofollow">vue.js</a> ★56380 - 流行的轻量高效的前端组件化方案</li>
+<li>
+<a href="https://github.com/fundon/vue-admin" target="_blank" rel="nofollow">vue-admin</a> ★4612 - Vue管理面板框架</li>
+<li>
+<a href="https://github.com/quasarframework/quasar" target="_blank" rel="nofollow">quasar</a> ★2353 - 响应式网站和混合移动应用程序</li>
+<li>
+<a href="https://github.com/SimulatedGREG/electron-vue" target="_blank" rel="nofollow">electron-vue</a> ★2085 - Electron及VueJS快速启动样板</li>
+<li>
+<a href="https://github.com/PanJiaChen/vue-element-admin" target="_blank" rel="nofollow">vue-element-admin</a> ★1986 - vue2管理系统模板</li>
+<li>
+<a href="https://github.com/egoist/vuepack" target="_blank" rel="nofollow">vuepack</a> ★1618 - 现代VueJS启动器</li>
+<li>
+<a href="https://github.com/N3-components/N3-components" target="_blank" rel="nofollow">N3-components</a> ★656 - 快速构建页面和应用</li>
+<li>
+<a href="https://github.com/honraytech/VueThink" target="_blank" rel="nofollow">VueThink</a> ★373 - 前后端分离框架</li>
+<li>
+<a href="https://github.com/petervmeijgaard/vue-2.0-boilerplate" target="_blank" rel="nofollow">vue-2.0-boilerplate</a> ★358 - Vue2单页应用样板&#8203;</li>
+<li>
+<a href="https://github.com/hanan198501/vue-spa-template" target="_blank" rel="nofollow">vue-spa-template</a> ★344 - 前后端分离后的单页应用开发</li>
+<li>
+<a href="https://github.com/nolimits4web/Framework7-Vue" target="_blank" rel="nofollow">Framework7-Vue</a> ★283 - VueJS与Framework7结合</li>
+<li>
+<a href="https://github.com/wangxg2016/vue-bulma" target="_blank" rel="nofollow">vue-bulma</a> ★215 - 轻量级高性能MVVM Admin UI框架</li>
+<li>
+<a href="https://github.com/andrewcourtice/vuetiful" target="_blank" rel="nofollow">vuetiful</a> ★189 - 创建业务及管理应用程序</li>
+<li>
+<a href="https://github.com/cklmercer/vue-stack-2.0" target="_blank" rel="nofollow">vue-stack-2.0</a> ★155 - Vue2项目样板</li>
+<li>
+<a href="https://github.com/devjin0617/vue2-admin-lte" target="_blank" rel="nofollow">vue2-admin-lte</a> ★154 - vue2版本的adminLTE</li>
+<li>
+<a href="https://github.com/shenghy/jspangAdmin" target="_blank" rel="nofollow">jspangAdmin</a> ★140 - 基于Vue2的后台管理系统</li>
+<li>
+<a href="https://github.com/erguotou520/vue-fullstack" target="_blank" rel="nofollow">vue-fullstack</a> ★140 - 实时的用户友好的后台系统</li>
+<li>
+<a href="https://github.com/cristijora/vue-paper-dashboard" target="_blank" rel="nofollow">vue-paper-dashboard</a> ★120 - Vue的Tim Paper 仪表盘</li>
+<li>
+<a href="https://github.com/rodzzlessa24/vue-webgulp" target="_blank" rel="nofollow">vue-webgulp</a> ★113 - 仿VueJS Vue loader示例</li>
+<li>
+<a href="https://github.com/Metnew/vue-element-starter" target="_blank" rel="nofollow">vue-element-starter</a> ★83 - vue启动页</li>
+<li>
+<a href="https://github.com/yangjiewu/vuemin" target="_blank" rel="nofollow">vuemin</a> ★17 - 基于Vue的企业级前端开发框架</li>
+<li>
+<a href="https://github.com/woleicom/vue-team-template" target="_blank" rel="nofollow">vue-team-template</a> ★12 - 一种构建vue项目的选择方案</li>
+
+
+
+<h4 id="实用库"><a href="#实用库" class="headerlink" title="实用库"></a>实用库</h4><li>
+<a href="https://github.com/vuejs/vuex" target="_blank" rel="nofollow">vuex</a> ★8043 - 专为 Vue.js 应用程序开发的状态管理模式</li>
+<li>
+<a href="https://github.com/vuejs/vue-loader" target="_blank" rel="nofollow">vue-loader</a> ★1847 - Vue.js 针对Webpack的组件装载插件</li>
+<li>
+<a href="https://github.com/vuejs/vue-validator" target="_blank" rel="nofollow">vue-validator</a> ★1807 - vue的验证器插件</li>
+<li>
+<a href="https://github.com/hilongjw/vue-lazyload" target="_blank" rel="nofollow">vue-lazyload</a> ★1224 - 用于懒加载的Vue模块</li>
+<li>
+<a href="https://github.com/monterail/vuelidate" target="_blank" rel="nofollow">vuelidate</a> ★1075 - 简单轻量级的基于模块的Vue.js验证</li>
+<li>
+<a href="https://github.com/kazupon/vue-i18n" target="_blank" rel="nofollow">vue-i18n</a> ★1053 - VueJS的多语言切换插件</li>
+<li>
+<a href="https://github.com/zerqu/qingcheng" target="_blank" rel="nofollow">qingcheng</a> ★736 - qingcheng主题</li>
+<li>
+<a href="https://github.com/MetinSeylan/Vue-Socket.io" target="_blank" rel="nofollow">Vue-Socketio</a> ★533 - VueJS的socketio实现</li>
+<li>
+<a href="https://github.com/Justineo/vue-awesome" target="_blank" rel="nofollow">vue-awesome</a> ★532 - VueJS字体Awesome组件</li>
+<li>
+<a href="https://github.com/ElemeFE/vue-desktop" target="_blank" rel="nofollow">vue-desktop</a> ★496 - 创建管理面板网站的UI库</li>
+<li>
+<a href="https://github.com/imcvampire/vue-axios" target="_blank" rel="nofollow">vue-axios</a> ★491 - 将axios整合到VueJS的封装</li>
+<li>
+<a href="https://github.com/declandewet/vue-meta" target="_blank" rel="nofollow">vue-meta</a> ★467 - 管理app的meta信息</li>
+<li>
+<a href="https://github.com/ktquez/vue-head" target="_blank" rel="nofollow">vue-head</a> ★396 - head标签的meta信息操作</li>
+<li>
+<a href="https://github.com/Akryum/meteor-vue-component" target="_blank" rel="nofollow">meteor-vue-component</a> ★382 - vue和meteor整合</li>
+<li>
+<a href="https://github.com/eddyerburgh/avoriaz" target="_blank" rel="nofollow">avoriaz</a> ★338 - VueJS测试实用工具库</li>
+<li>
+<a href="https://github.com/LinusBorg/portal-vue" target="_blank" rel="nofollow">portal-vue</a> ★239 - 在组件外部渲染DOM</li>
+<li>
+<a href="https://github.com/jrainlau/vue-flatpickr" target="_blank" rel="nofollow">vue-flatpickr</a> ★228 - 封装Flatpickr的Vue组件</li>
+<li>
+<a href="https://github.com/egoist/vue-timeago" target="_blank" rel="nofollow">vue-timeago</a> ★195 - VueJS的时间前组件</li>
+<li>
+<a href="https://github.com/lyonlai/blessed-vue" target="_blank" rel="nofollow">blessed-vue</a> ★181 - 编写命令行UI的VueJS运行时</li>
+<li>
+<a href="https://github.com/wrseward/vue-unit" target="_blank" rel="nofollow">vue-unit</a> ★179 - 创建单元测试组件</li>
+<li>
+<a href="https://github.com/dgrubelic/vue-authenticate" target="_blank" rel="nofollow">vue-authenticate</a> ★177 - 简单的VueJS身份认证库</li>
+<li>
+<a href="https://github.com/rigor789/vue-scrollTo" target="_blank" rel="nofollow">vue-scrollTo</a> ★174 - 滚动到元素的VueJS指令</li>
+<li>
+<a href="https://github.com/cenkai88/vue-svg-icon" target="_blank" rel="nofollow">vue-svg-icon</a> ★157 - vue2的可变彩色svg图标方案</li>
+<li>
+<a href="https://github.com/simplesmiler/vue-focus" target="_blank" rel="nofollow">vue-focus</a> ★148 - 可重用VueJS组件的焦点指令</li>
+<li>
+<a href="https://github.com/zhouzhuojie/meteor-vue" target="_blank" rel="nofollow">meteor-vue</a> ★134 - VueJS和Meteor的桥接</li>
+<li>
+<a href="https://github.com/lynzz/element-admin" target="_blank" rel="nofollow">element-admin</a> ★130 - 支持 vuecli 的 Element UI 的后台模板</li>
+<li>
+<a href="https://github.com/QingWei-Li/vuep" target="_blank" rel="nofollow">vuep</a> ★118 - 用实时编辑和预览来渲染Vue组件</li>
+<li>
+<a href="https://github.com/medevicex/vuet" target="_blank" rel="nofollow">vuet</a> ★116 - 一个跨页面、跨组件的状态管理插件</li>
+<li>
+<a href="https://github.com/Coffcer/vue-bootstrap-modal" target="_blank" rel="nofollow">vue-bootstrap-modal</a> ★112 - vue的Bootstrap样式组件</li>
+<li>
+<a href="https://github.com/haydenbbickerton/vue-animate" target="_blank" rel="nofollow">vue-animate</a> ★106 - 跨浏览器CSS3动画库</li>
+<li>
+<a href="https://github.com/kaorun343/vue-property-decorator" target="_blank" rel="nofollow">vue-property-decorator</a> ★104 - VueJS和属性Decorator</li>
+<li>
+<a href="https://github.com/SevenOutman/vue-aplayer" target="_blank" rel="nofollow">vue-aplayer</a> ★100 - 便于配置的音乐播放器vue2组件</li>
+<li>
+<a href="https://github.com/apertureless/vue-password-strength-meter" target="_blank" rel="nofollow">vue-password-strength-meter</a> ★97 - 交互式密码强度计</li>
+<li>
+<a href="https://github.com/icebob/vue-websocket" target="_blank" rel="nofollow">vue-websocket</a> ★91 - VueJS的Websocket插件</li>
+<li>
+<a href="https://github.com/pinguinjkeke/vue-local-storage" target="_blank" rel="nofollow">vue-local-storage</a> ★88 - 具有类型支持的Vuejs本地储存插件</li>
+<li>
+<a href="https://github.com/xtongs/vue-recyclist" target="_blank" rel="nofollow">vue-recyclist</a> ★88 - vuejs无限滚动列表</li>
+<li>
+<a href="https://github.com/yeyuqiudeng/vue-lazy-render" target="_blank" rel="nofollow">vue-lazy-render</a> ★87 - 用于Vue组件的延迟渲染</li>
+<li>
+<a href="https://github.com/superman66/vue-qart" target="_blank" rel="nofollow">vue-qart</a> ★86 - 用于qartjs的Vue2指令</li>
+<li>
+<a href="https://github.com/lmk123/vue-framework7" target="_blank" rel="nofollow">vue-framework7</a> ★85 - 结合VueJS使用的Framework7组件</li>
+<li>
+<a href="https://github.com/kartsims/vue-cordova" target="_blank" rel="nofollow">vue-cordova</a> ★85 - Cordova的VueJS插件</li>
+<li>
+<a href="https://github.com/FranckFreiburger/http-vue-loader" target="_blank" rel="nofollow">http-vue-loader</a> ★84 - 从html及js环境加载vue文件</li>
+<li>
+<a href="https://github.com/apertureless/vue-parallax" target="_blank" rel="nofollow">vue-parallax</a> ★84 - 快速60fps视差滚动效果组件</li>
+<li>
+<a href="https://github.com/xiaokaike/vue-clipboard" target="_blank" rel="nofollow">vue-clipboard</a> ★84 - VueJS的剪贴板</li>
+<li>
+<a href="https://github.com/JiriChara/vue-kindergarten" target="_blank" rel="nofollow">vue-kindergarten</a> ★83 - 将kindergarten集成到VueJS应用</li>
+<li>
+<a href="https://github.com/cklmercer/vue-events" target="_blank" rel="nofollow">vue-events</a> ★83 - 简化事件的VueJS插件</li>
+<li>
+<a href="https://github.com/se-panfilov/vue-notifications" target="_blank" rel="nofollow">vue-notifications</a> ★80 - 非阻塞通知库</li>
+<li>
+<a href="https://github.com/Sopamo/vue-online" target="_blank" rel="nofollow">vue-online</a> ★77 - reactive的在线和离线组件</li>
+<li>
+<a href="https://github.com/iFgR/vue-shortkey" target="_blank" rel="nofollow">vue-shortkey</a> ★74 - 应用于Vue.js的Vue-ShortKey 插件</li>
+<li>
+<a href="https://github.com/yangmingshan/vue-bus" target="_blank" rel="nofollow">vue-bus</a> ★71 - VueJS的事件总线</li>
+<li>
+<a href="https://github.com/dkfbasel/vuex-i18n" target="_blank" rel="nofollow">vuex-i18n</a> ★71 - 定位插件</li>
+<li>
+<a href="https://github.com/wxsms/uiv" target="_blank" rel="nofollow">uiv</a> ★70 - Vue实现的Bootstrap组件</li>
+<li>
+<a href="https://github.com/weinot/vue-router-transition" target="_blank" rel="nofollow">vue-router-transition</a> ★69 - 页面过渡插件</li>
+<li>
+<a href="https://github.com/mlyknown/vue-gesture" target="_blank" rel="nofollow">vue-gesture</a> ★69 - VueJS的手势事件插件</li>
+<li>
+<a href="https://github.com/thetutlage/vue-clip" target="_blank" rel="nofollow">vue-clip</a> ★67 - 简约的破解文件上传器</li>
+<li>
+<a href="https://github.com/SimulatedGREG/vue-electron" target="_blank" rel="nofollow">vue-electron</a> ★66 - 将选择的API封装到Vue对象中的插件</li>
+<li>
+<a href="https://github.com/vue-bulma/cleave" target="_blank" rel="nofollow">cleave</a> ★64 - 基于cleave.js的Cleave组件</li>
+<li>
+<a href="https://github.com/gocanto/vuemit" target="_blank" rel="nofollow">vuemit</a> ★63 - 处理VueJS事件</li>
+<li>
+<a href="https://github.com/israelss/vue-worker" target="_blank" rel="nofollow">vue-worker</a> ★56 - 使用webworkers的Vue插件</li>
+<li>
+<a href="https://github.com/leonardovilarinho/vue-acl" target="_blank" rel="nofollow">vue-acl</a> ★54 - VueJS访问控制列表插件</li>
+<li>
+<a href="https://github.com/HerringtonDarkholme/vue-ts-loader" target="_blank" rel="nofollow">vue-ts-loader</a> ★54 - 在Vue装载机检查脚本</li>
+<li>
+<a href="https://github.com/David-Desmaisons/Vue.resize" target="_blank" rel="nofollow">Vue.resize</a> ★51 - 检测HTML调整大小事件的vue指令</li>
+<li>
+<a href="https://github.com/Vuedeux/vuedeux" target="_blank" rel="nofollow">vuedeux</a> ★50 - 轻量级开源实用用层</li>
+<li>
+<a href="https://github.com/RobinCK/vue-ls" target="_blank" rel="nofollow">vue-ls</a> ★49 - 适配Vuecontext中LocalStorage的Vue插件</li>
+<li>
+<a href="https://github.com/gocanto/lazy-vue" target="_blank" rel="nofollow">lazy-vue</a> ★48 - 懒加载图片</li>
+<li>
+<a href="https://github.com/matfish2/vue-pagination-2" target="_blank" rel="nofollow">vue-pagination-2</a> ★46 - 简单通用的分页组件</li>
+<li>
+<a href="https://github.com/AStaroverov/v-media-query" target="_blank" rel="nofollow">v-media-query</a> ★44 - vue中添加用于配合媒体查询的方法</li>
+<li>
+<a href="https://github.com/Akryum/vue-observe-visibility" target="_blank" rel="nofollow">vue-observe-visibility</a> ★42 - 当元素在页面上可见或隐藏时检测</li>
+<li>
+<a href="https://github.com/Coffcer/vue-lazy-component" target="_blank" rel="nofollow">vue-lazy-component</a> ★38 - 懒加载组件或者元素的Vue指令</li>
+<li>
+<a href="https://github.com/ropbla9/vue-reactive-storage" target="_blank" rel="nofollow">vue-reactive-storage</a> ★37 - vue插件的Reactive层</li>
+<li>
+<a href="https://github.com/miaolz123/vue-helmet" target="_blank" rel="nofollow">vue-helmet</a> ★37 - HTML标题管理器</li>
+<li>
+<a href="https://github.com/richardanaya/voir" target="_blank" rel="nofollow">voir</a> ★35 - 保持mutation与视图组件的分离</li>
+<li>
+<a href="https://github.com/xanf/vuex-shared-mutations" target="_blank" rel="nofollow">vuex-shared-mutations</a> ★34 - 分享某种Vuex mutations</li>
+<li>
+<a href="https://github.com/surmon-china/vue-drag-zone" target="_blank" rel="nofollow">vue-drag-zone</a> ★28 - 适用于Vue2的dom拖动组件</li>
+<li>
+<a href="https://github.com/mysticatea/vue-eslint-parser" target="_blank" rel="nofollow">vue-eslint-parser</a> ★27 - ESLint自定义解析</li>
+<li>
+<a href="https://github.com/vue-bulma/modal" target="_blank" rel="nofollow">modal</a> ★26 - Vue Bulma的modal组件</li>
+<li>
+<a href="https://github.com/wakeupmypig/vue-plan" target="_blank" rel="nofollow">vue-plan</a> ★25 - Vuex-状态管理</li>
+<li>
+<a href="https://github.com/BosNaufal/vue-file-base64" target="_blank" rel="nofollow">vue-file-base64</a> ★22 - 将文件转换为Base64的vue组件</li>
+<li>
+<a href="https://github.com/lzxb/vue-methods-promise" target="_blank" rel="nofollow">vue-methods-promise</a> ★21 - 使vue方法支持promise</li>
+<li>
+<a href="https://github.com/David-Desmaisons/Vue.ImagesLoaded" target="_blank" rel="nofollow">Vue.ImagesLoaded</a> ★20 - 检测图片加载的VueJS指令</li>
+<li>
+<a href="https://github.com/irwansyahwii/Famous-Vue" target="_blank" rel="nofollow">Famous-Vue</a> ★16 - Famous库的vue组件</li>
+<li>
+<a href="https://github.com/LeoHuiyi/leo-vue-validator" target="_blank" rel="nofollow">leo-vue-validator</a> ★15 - 异步的表单验证组件</li>
+<li>
+<a href="https://github.com/Haixing-Hu/vue-titlecase" target="_blank" rel="nofollow">vue-titlecase</a> ★13 - 用于字符串titlecased的VueJS过滤器</li>
+<li>
+<a href="https://github.com/MetinSeylan/Vue-Easy-Validator" target="_blank" rel="nofollow">Vue-Easy-Validator</a> ★12 - 简单的表单验证</li>
+<li>
+<a href="https://github.com/vue-comps/vue-zoombox" target="_blank" rel="nofollow">vue-zoombox</a> ★12 - 一个高级zoombox</li>
+<li>
+<a href="https://github.com/imcvampire/vue-truncate-filter" target="_blank" rel="nofollow">vue-truncate-filter</a> ★10 - 截断字符串的VueJS过滤器</li>
+<li>
+<a href="https://github.com/ElderJames/vue-router-storage" target="_blank" rel="nofollow">vue-router-storage</a> ★9 - vue历史路由持久化的解决方案</li>
+<li>
+<a href="https://github.com/syropian/vue-input-autosize" target="_blank" rel="nofollow">vue-input-autosize</a> ★9 - 基于内容自动调整文本输入的大小</li>
+<li>
+<a href="https://github.com/phphe/vue-data-validator" target="_blank" rel="nofollow">vue-data-validator</a> ★4 - Vuejs2的数据验证插件</li>
+<li>
+<a href="https://github.com/yodfz/vue-lazyloadImg" target="_blank" rel="nofollow">vue-lazyloadImg</a> ★4 - 图片懒加载插件</li>
+
+
+<h4 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h4><li>
+<a href="https://github.com/phanan/koel" target="_blank" rel="nofollow">koel</a> ★7773 - 基于网络的个人音频流媒体服务</li>
+<li>
+<a href="https://github.com/pagekit/pagekit" target="_blank" rel="nofollow">pagekit</a> ★4225 - 轻量级的CMS建站系统</li>
+<li>
+<a href="https://github.com/lin-xin/vue-manage-system" target="_blank" rel="nofollow">vue-manage-system</a> ★2057 - 后台管理系统解决方案</li>
+<li>
+<a href="https://github.com/Vuedo/vuedo" target="_blank" rel="nofollow">vuedo</a> ★1265 - 博客平台</li>
+<li>
+<a href="https://github.com/jackhutu/jackblog-vue" target="_blank" rel="nofollow">jackblog-vue</a> ★1120 - 个人博客系统</li>
+<li>
+<a href="https://github.com/jcc/blog" target="_blank" rel="nofollow">PJ Blog</a> ★1018 - 开源博客</li>
+<li>
+<a href="https://github.com/lzxb/vue-cnode" target="_blank" rel="nofollow">vue-cnode</a> ★787 - 重写vue版cnode社区</li>
+<li>
+<a href="https://github.com/ericjjj/vms" target="_blank" rel="nofollow">vms</a> ★629 - vuejs2管理系统</li>
+<li>
+<a href="https://github.com/ycwalker/CMS-of-Blog" target="_blank" rel="nofollow">CMS-of-Blog</a> ★541 - 博客内容管理器</li>
+<li>
+<a href="https://github.com/Caiyeon/goldfish" target="_blank" rel="nofollow">goldfish</a> ★518 - 用于HashiCorp Vault的Admin UI</li>
+<li>
+<a href="https://github.com/mrgodhani/rss-reader" target="_blank" rel="nofollow">rss-reader</a> ★368 - 简单的rss阅读器</li>
+<li>
+<a href="https://github.com/viko16/vue-ghpages-blog" target="_blank" rel="nofollow">vue-ghpages-blog</a> ★254 - 依赖GitHub Pages无需本地生成的静态博客</li>
+<li>
+<a href="https://github.com/surmon-china/vue-blog" target="_blank" rel="nofollow">vue-blog</a> ★143 - 使用Vue2.0 和Vuex的vue-blog</li>
+<li>
+<a href="https://github.com/wh469012917/swoole-vue-webim" target="_blank" rel="nofollow">swoole-vue-webim</a> ★137 - Web版的聊天应用</li>
+<li>
+<a href="https://github.com/zhangxin840/tomato5" target="_blank" rel="nofollow">tomato5</a> ★134 - 实时的协作工具</li>
+<li>
+<a href="https://github.com/Angarsk8/Loopa-News" target="_blank" rel="nofollow">Loopa-News</a> ★133 - 开源社会新闻应用</li>
+<li>
+<a href="https://github.com/reg21st/vue2-management-platform" target="_blank" rel="nofollow">vue2-management-platform</a> ★74 - vue2.0+ elementUI 后台管理平台</li>
+<li>
+<a href="https://github.com/thelinuxlich/vue-dashing-js" target="_blank" rel="nofollow">vue-dashing-js</a> ★70 - nuvo-dashing-js的fork</li>
+<li>
+<a href="https://github.com/sapjax/fewords" target="_blank" rel="nofollow">fewords</a> ★63 - 功能极其简单的笔记本</li>
+<li>
+<a href="https://github.com/wxs77577/adminify" target="_blank" rel="nofollow">adminify</a> ★46 - 一个基于Vuetify material的Admin面板</li>
+
+
+
+<h4 id="Demo示例"><a href="#Demo示例" class="headerlink" title="Demo示例"></a>Demo示例</h4><ul>
+<li>
+<a href="https://github.com/bailicangdu/vue2-elm" target="_blank" rel="nofollow">vue2-elm</a> ★8036 - 重写饿了么webapp</li>
+<li>
+<a href="https://github.com/shinygang/Vue-cnodejs" target="_blank" rel="nofollow">Vue-cnodejs</a> ★2491 - 基于vue重写Cnodejs.org的webapp</li>
+<li>
+<a href="https://github.com/javaSwing/NeteaseCloudWebApp" target="_blank" rel="nofollow">NeteaseCloudWebApp</a> ★1549 - 高仿网易云音乐的webapp</li>
+<li>
+<a href="https://github.com/bailicangdu/vue2-happyfri" target="_blank" rel="nofollow">vue2-happyfri</a> ★1535 - vue2及vuex的入门练习项目</li>
+<li>
+<a href="https://github.com/hilongjw/vue-zhihu-daily" target="_blank" rel="nofollow">vue-zhihu-daily</a> ★1010 - 知乎日报 with Vuejs</li>
+<li>
+<a href="https://github.com/lzxb/vue2-demo" target="_blank" rel="nofollow">vue2-demo</a> ★994 - 从零构建vue2 + vue-router + vuex 开发环境</li>
+<li>
+<a href="https://github.com/useryangtao/vue-wechat" target="_blank" rel="nofollow">vue-wechat</a> ★939 - vue.js开发微信app界面</li>
+<li>
+<a href="https://github.com/liangxiaojuan/eleme" target="_blank" rel="nofollow">eleme</a> ★882 - 高仿饿了么app商家详情</li>
+<li>
+<a href="https://github.com/kenberkeley/vue-demo" target="_blank" rel="nofollow">vue-demo</a> ★755 - vue简易留言板</li>
+<li>
+<a href="https://github.com/lybenson/bilibili-vue" target="_blank" rel="nofollow">bilibili-vue</a> ★694 - 全栈式开发bilibili首页</li>
+<li>
+<a href="https://github.com/codecasts/spa-starter-kit" target="_blank" rel="nofollow">spa-starter-kit</a> ★646 - 单页应用启动套件</li>
+<li>
+<a href="https://github.com/SimonZhangITer/VueDemo_Sell_Eleme" target="_blank" rel="nofollow">VueDemo_Sell_Eleme</a> ★636 - Vue2高仿饿了么外卖平台</li>
+<li>
+<a href="https://github.com/Sioxas/vue-music" target="_blank" rel="nofollow">vue-music</a> ★621 - Vue 音乐搜索播放</li>
+<li>
+<a href="https://github.com/jeneser/douban" target="_blank" rel="nofollow">douban</a> ★606 - 基于vue全家桶的精致豆瓣DEMO</li>
+<li>
+<a href="https://github.com/liangxiaojuan/vue-Meizi" target="_blank" rel="nofollow">vue-Meizi</a> ★604 - vue最新实战项目</li>
+<li>
+<a href="https://github.com/zhengguorong/maizuo" target="_blank" rel="nofollow">maizuo</a> ★603 - vue/vuex/redux仿卖座网</li>
+<li>
+<a href="https://github.com/zhaohaodang/vue-WeChat" target="_blank" rel="nofollow">vue-WeChat</a> ★558 - 基于Vue2高仿微信App的单页应用</li>
+<li>
+<a href="https://github.com/lavyun/vue-demo-kugou" target="_blank" rel="nofollow">vue-demo-kugou</a> ★500 - vuejs仿写酷狗音乐webapp</li>
+<li>
+<a href="https://github.com/bailicangdu/vue2-manage" target="_blank" rel="nofollow">vue2-manage</a> ★457 - 基于 vue + element-ui 的后台管理系统</li>
+<li>
+<a href="https://github.com/yatessss/zhihudaily-vue" target="_blank" rel="nofollow">zhihudaily-vue</a> ★455 - 知乎日报web版</li>
+<li>
+<a href="https://github.com/ShanaMaid/vue-163-music" target="_blank" rel="nofollow">vue-163-music</a> ★448 - vue仿网易云音乐客户端版</li>
+<li>
+<a href="https://github.com/superman66/vue-axios-github" target="_blank" rel="nofollow">vue-axios-github</a> ★448 - 登录拦截登出功能</li>
+<li>
+<a href="https://github.com/jiakeqi/douban" target="_blank" rel="nofollow">douban</a> ★440 - 模仿豆瓣前端</li>
+<li>
+<a href="https://github.com/andylei18/vue-shopping" target="_blank" rel="nofollow">vue-shopping</a> ★404 - 蘑菇街移动端</li>
+<li>
+<a href="https://github.com/canfoo/vue2.0-taopiaopiao" target="_blank" rel="nofollow">vue2.0-taopiaopiao</a> ★402 - vue2.0与express构建淘票票页面</li>
+<li>
+<a href="https://github.com/hzzly/xyy-vue" target="_blank" rel="nofollow">xyy-vue</a> ★396 - 大学生交流平台</li>
+<li>
+<a href="https://github.com/TIGERB/easy-vue" target="_blank" rel="nofollow">easy-vue</a> ★370 - 使用Vue实现简易web</li>
+<li>
+<a href="https://github.com/superman66/vue2.x-douban" target="_blank" rel="nofollow">vue2.x-douban</a> ★360 - Vue2实现简易豆瓣电影webApp</li>
+<li>
+<a href="https://github.com/jiangqizheng/vue2-MiniQQ" target="_blank" rel="nofollow">vue2-MiniQQ</a> ★351 - 基于Vue2实现的仿手机QQ单页面应用</li>
+<li>
+<a href="https://github.com/wendaosanshou/mi-by-vue" target="_blank" rel="nofollow">mi-by-vue</a> ★291 - VueJS仿小米官网</li>
+<li>
+<a href="https://github.com/walleeeee/daily-zhihu" target="_blank" rel="nofollow">daily-zhihu</a> ★275 - 基于Vue2的知乎日报单页应用</li>
+<li>
+<a href="https://github.com/jiangjiu/vue-leancloud-blog" target="_blank" rel="nofollow">vue-leancloud-blog</a> ★268 - 一个前后端完全分离的单页应用</li>
+<li>
+<a href="https://github.com/Reusjs/VueMusic-PC" target="_blank" rel="nofollow">VueMusic-PC</a> ★260 - Vue.js高还原网易云音乐系列</li>
+<li>
+<a href="https://github.com/yjj5855/node-vue-server-webpack" target="_blank" rel="nofollow">node-vue-server-webpack</a> ★253 - Node.js+Vue.js+webpack快速开发框架</li>
+<li>
+<a href="https://github.com/beauty-enjoy/beauty" target="_blank" rel="nofollow">beauty</a> ★245 - 豆瓣美女clone</li>
+<li>
+<a href="https://github.com/liujians/vue-adminLte-vue-router" target="_blank" rel="nofollow">vue-adminLte-vue-router</a> ★243 - vue和adminLte整合应用</li>
+<li>
+<a href="https://github.com/okoala/vue-fis3" target="_blank" rel="nofollow">vue-fis3</a> ★217 - 流行开源工具集成demo</li>
+<li>
+<a href="https://github.com/lin-xin/notepad" target="_blank" rel="nofollow">notepad</a> ★216 - 本地存储的记事本</li>
+<li>
+<a href="https://github.com/ChuckCZC/vue-demo-maizuo" target="_blank" rel="nofollow">vue-demo-maizuo</a> ★210 - 使用Vue2全家桶仿制卖座电影</li>
+<li>
+<a href="https://github.com/Werb/Pixel-Web" target="_blank" rel="nofollow">Pixel-Web</a> ★198 - 一个 Vue 微博客户端</li>
+<li>
+<a href="https://github.com/MengZhaoFly/netease_yanxuan" target="_blank" rel="nofollow">netease_yanxuan</a> ★198 - vue版网易严选</li>
+<li>
+<a href="https://github.com/dmtrbrl/tmdb-app" target="_blank" rel="nofollow">tmdb-app</a> ★194 - TMDbVueJS应用</li>
+<li>
+<a href="https://github.com/xrr2016/vue-express-mongodb" target="_blank" rel="nofollow">vue-express-mongodb</a> ★189 - 简单的前后端分离案例</li>
+<li>
+<a href="https://github.com/iHaPBoy/vue-zhihudaily" target="_blank" rel="nofollow">vue-zhihudaily</a> ★187 - 知乎日报 Web 版本</li>
+<li>
+<a href="https://github.com/RalfZhang/Vdo" target="_blank" rel="nofollow">Vdo</a> ★179 - VueJS与MD重构豆瓣</li>
+<li>
+<a href="https://github.com/BUPT-HJM/vue-blog" target="_blank" rel="nofollow">vue-blog</a> ★171 - 单用户博客</li>
+<li>
+<a href="https://github.com/xiaobinwu/Wuji" target="_blank" rel="nofollow">Wuji</a> ★168 - 吾记网页版</li>
+<li>
+<a href="https://github.com/rokups/hello-vue-django" target="_blank" rel="nofollow">hello-vue-django</a> ★160 - 使用带有Django的vuejs的样板项目</li>
+<li>
+<a href="https://github.com/pomelo-chuan/Zhihu-Daily-Vue.js" target="_blank" rel="nofollow">Zhihu-Daily-Vue.js</a> ★157 - Vuejs单页网页应用</li>
+<li>
+<a href="https://github.com/renjie1996/tencent-sports" target="_blank" rel="nofollow">tencent-sports</a> ★154 - Vue全家桶仿腾讯体育</li>
+<li>
+<a href="https://github.com/zhixuanziben/gouyan-movie-vue" target="_blank" rel="nofollow">gouyan-movie-vue</a> ★151 - 基于vue的在线电影影讯网站</li>
+<li>
+<a href="https://github.com/CommanderXL/x-blog" target="_blank" rel="nofollow">x-blog</a> ★145 - 开源的个人blog项目</li>
+<li>
+<a href="https://github.com/lxyisme/vue-musicApp" target="_blank" rel="nofollow">vue-musicApp</a> ★132 - 使用vue全家桶制作的音乐播放器</li>
+<li>
+<a href="https://github.com/wszgxa/vue-cnode" target="_blank" rel="nofollow">vue-cnode</a> ★131 - vue单页应用demo</li>
+<li>
+<a href="https://github.com/193Eric/webpack-vue-vueRouter" target="_blank" rel="nofollow">webpack-vue-vueRouter</a> ★130 - webpack及vue开发的简单项目实例</li>
+<li>
+<a href="https://github.com/Molunerfinn/vue-koa-demo" target="_blank" rel="nofollow">vue-koa-demo</a> ★128 - 使用Vue2和Koa1的全栈demo</li>
+<li>
+<a href="https://github.com/elva2596/vueBlog" target="_blank" rel="nofollow">vueBlog</a> ★127 - 前后端分离博客</li>
+<li>
+<a href="https://github.com/secreter/websocket_chat" target="_blank" rel="nofollow">websocket_chat</a> ★127 - 基于vue和websocket的多人在线聊天室</li>
+<li>
+<a href="https://github.com/peng1992/houtai" target="_blank" rel="nofollow">houtai</a> ★125 - 基于vue和Element的后台管理系统</li>
+<li>
+<a href="https://github.com/hcy1996/vue-toutiao" target="_blank" rel="nofollow">vue-toutiao</a> ★121 - vuejs高仿今日头条移动端</li>
+<li>
+<a href="https://github.com/microzz/vue-cnode" target="_blank" rel="nofollow">vue-cnode</a> ★121 - 开源的CNode社区</li>
+<li>
+<a href="https://github.com/BosNaufal/vue-mini-shop" target="_blank" rel="nofollow">vue-mini-shop</a> ★121 - VueJS在线商店</li>
+<li>
+<a href="https://github.com/beidan/photoShare" target="_blank" rel="nofollow">photoShare</a> ★120 - 基于图片分享的社交平台</li>
+<li>
+<a href="https://github.com/vanishcode/iview2-management-system" target="_blank" rel="nofollow">iview2-management-system</a> ★119 - 后台管理系统解决方案简单示例</li>
+<li>
+<a href="https://github.com/monkeyWangs/doubanMovie" target="_blank" rel="nofollow">doubanMovie</a> ★119 - 豆瓣电影展示</li>
+<li>
+<a href="https://github.com/hbxywdk/eleme-vue2" target="_blank" rel="nofollow">eleme-vue2</a> ★112 - 仿饿了么H5纯前端Vue版</li>
+<li>
+<a href="https://github.com/cccyb/vue-zhihu-daily" target="_blank" rel="nofollow">vue-zhihu-daily</a> ★111 - 基于Vue全家桶开发的知乎日报</li>
+<li>
+<a href="https://github.com/biaodigit/Vue-News" target="_blank" rel="nofollow">Vue-News</a> ★107 - 基于vue全家桶的仿知乎日报单页应用</li>
+<li>
+<a href="https://github.com/xingbofeng/douban-movie" target="_blank" rel="nofollow">douban-movie</a> ★107 - 仿豆瓣电影wap端</li>
+<li>
+<a href="https://github.com/qxl1231/generator-loopback-vue" target="_blank" rel="nofollow">generator-loopback-vue</a> ★104 - 典型前后端分离项目模板</li>
+<li>
+<a href="https://github.com/odranoelBR/vue-quasar-admin-example" target="_blank" rel="nofollow">vue-quasar-admin-example</a> ★99 - 将Quasar和VueJS应用于SPA项目</li>
+<li>
+<a href="https://github.com/cs1707/vue-zhihudaily-2.0" target="_blank" rel="nofollow">vue-zhihudaily-2.0</a> ★97 - 使用Vue2.0+vue-router+vuex创建的zhihudaily</li>
+<li>
+<a href="https://github.com/liangxiaojuan/vue-todos" target="_blank" rel="nofollow">vue-todos</a> ★95 - vue最新实战项目教程</li>
+<li>
+<a href="https://github.com/ddqre12345/vue-music" target="_blank" rel="nofollow">vue-music</a> ★91 - 网易云音乐Demo</li>
+<li>
+<a href="https://github.com/Panda-Hope/vue-qqmusic" target="_blank" rel="nofollow">vue-qqmusic</a> ★90 - Vue全家桶+Mint-Ui打造高仿QQMusic</li>
+<li>
+<a href="https://github.com/vincentSea/vue2.x-Cnode" target="_blank" rel="nofollow">vue2.x-Cnode</a> ★88 - 基于vue全家桶的Cnode社区</li>
+<li>
+<a href="https://github.com/hql123/vue-ruby-china" target="_blank" rel="nofollow">vue-ruby-china</a> ★86 - VueJS框架搭建的rubychina平台</li>
+<li>
+<a href="https://github.com/monkeyWangs/doubanMovie-SSR" target="_blank" rel="nofollow">doubanMovie-SSR</a> ★85 - Vue豆瓣电影服务端渲染</li>
+<li>
+<a href="https://github.com/huangche007/vue-jd" target="_blank" rel="nofollow">vue-jd</a> ★76 - 京东移动web商城</li>
+<li>
+<a href="https://github.com/zimplexing/vue-nReader" target="_blank" rel="nofollow">vue-nReader</a> ★73 - 使用vue2.0 + vue-router + vuex 的一个多页面小说阅读webapp</li>
+<li>
+<a href="https://github.com/FatDong1/VueBlog" target="_blank" rel="nofollow">VueBlog</a> ★73 - 前后端分离的个人博客</li>
+<li>
+<a href="https://github.com/littlewin-wang/Zhihu_Daily" target="_blank" rel="nofollow">Zhihu_Daily</a> ★73 - 基于Vue和Nodejs的Web单页应用</li>
+<li>
+<a href="https://github.com/sinner77/vue-koa2-login" target="_blank" rel="nofollow">vue-koa2-login</a> ★67 - 使用 VueJS &amp; NodeJS 实现的登录注册</li>
+<li>
+<a href="https://github.com/houbx/webApp" target="_blank" rel="nofollow">webApp</a> ★64 - Vue2的移动端webApp音乐播放器</li>
+<li>
+<a href="https://github.com/wenye123/vue-trip" target="_blank" rel="nofollow">vue-trip</a> ★64 - vue2做的出行webapp</li>
+<li>
+<a href="https://github.com/Alex-xd/seeMusic" target="_blank" rel="nofollow">seeMusic</a> ★63 - 跨平台云音乐播放器</li>
+<li>
+<a href="https://github.com/SidKwok/github-explorer" target="_blank" rel="nofollow">github-explorer</a> ★63 - 寻找最有趣的GitHub库</li>
+<li>
+<a href="https://github.com/zhoou/vue-cli-multipage-bootstrap" target="_blank" rel="nofollow">vue-cli-multipage-bootstrap</a> ★60 - 将vue官方在线示例整合到组件中</li>
+<li>
+<a href="https://github.com/beautifulBoys/vue-XiaoMi-Shop" target="_blank" rel="nofollow">vue-XiaoMi-Shop</a> ★59 - 高仿小米商城的项目</li>
+<li>
+<a href="https://github.com/leehomeok/Vue-NetEaseCloudMusic" target="_blank" rel="nofollow">Vue-NetEaseCloudMusic</a> ★59 - 模仿IOS版网易云音乐的手机网站</li>
+<li>
+<a href="https://github.com/shaqihe/life-app-vue" target="_blank" rel="nofollow">life-app-vue</a> ★59 - 使用vue2完成多功能集合到小webapp</li>
+<li>
+<a href="https://github.com/MrMoveon/doubanApp" target="_blank" rel="nofollow">doubanApp</a> ★55 - 用vue2实现仿豆瓣app</li>
+<li>
+<a href="https://github.com/QRL909109/ios7-vue" target="_blank" rel="nofollow">ios7-vue</a> ★52 - 使用vue2.0 vue-router vuex模拟ios7</li>
+<li>
+<a href="https://github.com/hzzly/canvas-vue" target="_blank" rel="nofollow">canvas-vue</a> ★50 - 一个Vue+Cnavas酷炫后台管理</li>
+<li>
+<a href="https://github.com/nswbmw/vue-bushishiren" target="_blank" rel="nofollow">vue-bushishiren</a> ★49 - 不是诗人应用</li>
+<li>
+<a href="https://github.com/albertchan/vue-ssr-boilerplate" target="_blank" rel="nofollow">vue-ssr-boilerplate</a> ★48 - 精简版的ofvue-hackernews-2</li>
+<li>
+<a href="https://github.com/gaohongwei11/vuecommunity" target="_blank" rel="nofollow">vuecommunity</a> ★47 - vue.js中文社区</li>
+<li>
+<a href="https://github.com/pluto1114/vue-music163" target="_blank" rel="nofollow">vue-music163</a> ★47 - 音乐VueJS项目</li>
+<li>
+<a href="https://github.com/safaring/Vue2-MV" target="_blank" rel="nofollow">Vue2-MV</a> ★45 - 仿网易云音乐MV的webapp</li>
+<li>
+<a href="https://github.com/hua1995116/musiccloudWebapp" target="_blank" rel="nofollow">musiccloudWebapp</a> ★44 - 用vuejs仿网易云音乐</li>
+<li>
+<a href="https://github.com/BubblyPoker/cnode-vue" target="_blank" rel="nofollow">cnode-vue</a> ★40 - 基于vue和vue-router构建的cnodejs web网站SPA</li>
+<li>
+<a href="https://github.com/tyllo/Framework7-VueJS" target="_blank" rel="nofollow">Framework7-VueJS</a> ★38 - 使用移动框架的示例</li>
+<li>
+<a href="https://github.com/JerryYgh/m-eleme" target="_blank" rel="nofollow">m-eleme</a> ★37 - 基于Vue全家桶仿饿了么移动端webapp</li>
+<li>
+<a href="https://github.com/sailengsi/sls-vuex2-demo" target="_blank" rel="nofollow">sls-vuex2-demo</a> ★37 - vuex2商城购物车demo</li>
+<li>
+<a href="https://github.com/silianpan/eagles" target="_blank" rel="nofollow">eagles</a> ★36 - 各种组件封装</li>
+<li>
+<a href="https://github.com/fishenal/Todos_Vuejs" target="_blank" rel="nofollow">Todos_Vuejs</a> ★35 - vuejs2搭建的极简的todolist</li>
+<li>
+<a href="https://github.com/jiananle/vue-cnode" target="_blank" rel="nofollow">vue-cnode</a> ★35 - 用 Vue 做的 CNode 官网</li>
+<li>
+<a href="https://github.com/GitaiQAQ/HyaReader" target="_blank" rel="nofollow">HyaReader</a> ★35 - 移动友好的阅读器</li>
+<li>
+<a href="https://github.com/lanux/Vue-Admin" target="_blank" rel="nofollow">Vue-Admin</a> ★33 - 基于Vue2的Admin系统</li>
+<li>
+<a href="https://github.com/liupeijun/vue2-hybridapp-haoshiqi" target="_blank" rel="nofollow">vue2-hybridapp-haoshiqi</a> ★32 - 实现单页面webapp以及hybridapp</li>
+<li>
+<a href="https://github.com/xrr2016/zhihu-daily" target="_blank" rel="nofollow">zhihu-daily</a> ★32 - 轻松查看知乎日报内容</li>
+<li>
+<a href="https://github.com/xandeer/gank" target="_blank" rel="nofollow">gank</a> ★32 - gankio资源的阅读应用</li>
+<li>
+<a href="https://github.com/NewsNIng/vue-h5plus" target="_blank" rel="nofollow">vue-h5plus</a> ★31 - 前卫的vue及html5plus跨平台demo</li>
+<li>
+<a href="https://github.com/soulcm/vue-cnode-mobile" target="_blank" rel="nofollow">vue-cnode-mobile</a> ★29 - 搭建cnode社区</li>
+<li>
+<a href="https://github.com/alanWongsGithub/vue-weather" target="_blank" rel="nofollow">vue-weather</a> ★26 - 基于vue.js 2.0的百度天气应用</li>
+<li>
+<a href="https://github.com/doterlin/vue-user-center" target="_blank" rel="nofollow">vue-user-center</a> ★26 - vuejs直播类应用web端个人中心</li>
+<li>
+<a href="https://github.com/moonou/zhihu-daily-vue" target="_blank" rel="nofollow">zhihu-daily-vue</a> ★22 - 知乎日报</li>
+<li>
+<a href="https://github.com/Damonlw/vue-cnode" target="_blank" rel="nofollow">vue-cnode</a> ★22 - 使用cNode社区提供的接口</li>
+<li>
+<a href="https://github.com/BosNaufal/vue-starter" target="_blank" rel="nofollow">vue-starter</a> ★22 - VueJs项目的简单启动页</li>
+<li>
+<a href="https://github.com/wx1993/node-vue-fabaocn" target="_blank" rel="nofollow">node-vue-fabaocn</a> ★21 - 基于 node 和 vue 实现的移动官网</li>
+<li>
+<a href="https://github.com/youknowznm/vue-memo" target="_blank" rel="nofollow">vue-memo</a> ★20 - 用 vue写的记事本应用</li>
+<li>
+<a href="https://github.com/Halfeld/v-notes" target="_blank" rel="nofollow">v-notes</a> ★20 - 简单美观的记事本</li>
+<li>
+<a href="https://github.com/momopig/vue-flexible-app" target="_blank" rel="nofollow">vue-flexible-app</a> ★19 - vue开发的一个简易app</li>
+<li>
+<a href="https://github.com/CaiYiLiang/simply-calculator-vuejs" target="_blank" rel="nofollow">simply-calculator-vuejs</a> ★19 - 用VueJS实现简易计算器</li>
+<li>
+<a href="https://github.com/ITCNZ/vue-dropload" target="_blank" rel="nofollow">vue-dropload</a> ★19 - 用以测试下拉加载与简单路由</li>
+<li>
+<a href="https://github.com/fishenal/Vuejs-SalePlatform" target="_blank" rel="nofollow">Vuejs-SalePlatform</a> ★19 - vuejs搭建的售卖平台demo</li>
+<li>
+<a href="https://github.com/hj624608494/vue-shopping-mall" target="_blank" rel="nofollow">vue-shopping-mall</a> ★16 - 基于Vue.js 2.x系列 + vue2-router + axios + iview 商城</li>
+<li>
+<a href="https://github.com/yangbo5207/qqmusic" target="_blank" rel="nofollow">qqmusic</a> ★13 - QQ音乐vue</li>
+<li>
+<a href="https://github.com/deshes/vue-weather" target="_blank" rel="nofollow">vue-weather</a> ★12 - VueJS天气demo</li>
+</ul>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vue/" rel="tag"># vue</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/23/Vue性能优化/" rel="prev" title="Vue性能优化">
+                Vue性能优化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Learn">
+            
+              <p class="site-author-name" itemprop="name">Learn</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zouyu01-sz/zouyu01-sz.github.io" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=1045032607&site=qq&menu=yes" " target="_blank" title="QQ">
+                      
+                        <i class="fa fa-fw fa-qq"></i>QQ</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://wolveq.github.io/" title="wolveq" target="_blank">wolveq</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://my.oschina.net/u/1017791" title="zzx10" target="_blank">zzx10</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#UI组件"><span class="nav-number">1.</span> <span class="nav-text">UI组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开发框架"><span class="nav-number">2.</span> <span class="nav-text">开发框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实用库"><span class="nav-number">3.</span> <span class="nav-text">实用库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#应用实例"><span class="nav-number">4.</span> <span class="nav-text">应用实例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Demo示例"><span class="nav-number">5.</span> <span class="nav-text">Demo示例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<div class="copyright">&copy; <span itemprop="copyrightYear">2017-2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Learn</span>
+
+  
+</div>
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<!--字数统计-->
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+</html>
