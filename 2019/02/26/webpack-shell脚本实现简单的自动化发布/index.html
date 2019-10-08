@@ -87,12 +87,10 @@
 <meta property="og:site_name" content="Learn个人博客-分享">
 <meta property="og:description" content="创建一个deploy.sh 在project下创建deploy.sh。1touch deploy.sh">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://zouyu01-sz.github.io/images/webpack/deploy_shell.png">
-<meta property="og:updated_time" content="2019-09-30T06:28:22.823Z">
+<meta property="og:updated_time" content="2019-10-08T01:55:01.833Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack+shell脚本实现简单的自动化发布">
 <meta name="twitter:description" content="创建一个deploy.sh 在project下创建deploy.sh。1touch deploy.sh">
-<meta name="twitter:image" content="http://zouyu01-sz.github.io/images/webpack/deploy_shell.png">
 
 
 
@@ -419,7 +417,11 @@
 <h4 id="设置package-json"><a href="#设置package-json" class="headerlink" title="设置package.json"></a>设置package.json</h4><p>在packa.json增加一条命令脚本</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;scripts&quot;: &#123;</span><br><span class="line">        &quot;deploy&quot;: &quot;bash deploy.sh&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>示例如下：<br><img src="/images/webpack/deploy_shell.png" alt="avatar"></p>
+<!-- 示例如下：
+![avatar](/images/webpack/deploy_shell.png)
+ -->
+
+
 <h4 id="执行打包命令"><a href="#执行打包命令" class="headerlink" title="执行打包命令"></a>执行打包命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run deploy 即可自动构建部署到git仓库/github上。</span><br></pre></td></tr></table></figure>
       
     </div>

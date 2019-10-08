@@ -87,14 +87,14 @@
 <meta property="og:site_name" content="Learn个人博客-分享">
 <meta property="og:description" content="前言lsb_release -a  //查看Linux系统版本  (适用于所有的linux，包括Redhat、SuSE、Debian等发行版，但是在debian下要安装lsb) 安装nginx 基础运行环境  123456789yum -y install make zlib zlib-devel gcc-c++ libtool  openssl openssl-devel或者 yum insta">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://zouyu01-sz.github.io/images/nginx/nginx_notfund930.png">
-<meta property="og:image" content="http://zouyu01-sz.github.io/images/nginx/nginx_notfund_Solve.png">
-<meta property="og:image" content="http://zouyu01-sz.github.io/images/nginx/iptables9301120.png">
-<meta property="og:updated_time" content="2019-09-30T03:47:11.115Z">
+<meta property="og:image" content="http://zouyu01-sz.github.io/images/nginx/nginx-notfound.png">
+<meta property="og:image" content="http://zouyu01-sz.github.io/images/nginx/nginx-path.png">
+<meta property="og:image" content="http://zouyu01-sz.github.io/images/nginx/iptables.png">
+<meta property="og:updated_time" content="2019-10-08T01:54:28.887Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOs下安装nginx">
 <meta name="twitter:description" content="前言lsb_release -a  //查看Linux系统版本  (适用于所有的linux，包括Redhat、SuSE、Debian等发行版，但是在debian下要安装lsb) 安装nginx 基础运行环境  123456789yum -y install make zlib zlib-devel gcc-c++ libtool  openssl openssl-devel或者 yum insta">
-<meta name="twitter:image" content="http://zouyu01-sz.github.io/images/nginx/nginx_notfund930.png">
+<meta name="twitter:image" content="http://zouyu01-sz.github.io/images/nginx/nginx-notfound.png">
 
 
 
@@ -427,10 +427,10 @@
 <p>2：切换目录：cd /usr/local<br>3：创建文件夹：mkdir nginx   并 cd nginx<br>4：下载nginx：wget <a href="http://nginx.org/download/nginx-1.13.7.tar.gz" target="_blank" rel="noopener">http://nginx.org/download/nginx-1.13.7.tar.gz</a><br>5：解压：tar -xvf nginx-1.13.7.tar.gz<br>6：切换目录：cd nginx-1.13.7<br>7：make install<br>8：查看nginx进程 ps -ef | grep nginx</p>
 <a id="more"></a>
 
-<h4 id="Nginx指令无法使用，问题如下"><a href="#Nginx指令无法使用，问题如下" class="headerlink" title="Nginx指令无法使用，问题如下"></a>Nginx指令无法使用，问题如下</h4><p><img src="/images/nginx/nginx_notfund930.png" alt="avatar"></p>
+<h4 id="Nginx指令无法使用，问题如下"><a href="#Nginx指令无法使用，问题如下" class="headerlink" title="Nginx指令无法使用，问题如下"></a>Nginx指令无法使用，问题如下</h4><p><img src="/images/nginx/nginx-notfound.png" alt="avatar"></p>
 <ol>
 <li>vim /etc/profile 进入文件进行编辑<br>‘/usr/local/nginx/sbin’  代表nginx的安装位置</li>
-<li>新增以下PATH<br><img src="/images/nginx/nginx_notfund_Solve.png" alt="avatar"></li>
+<li>新增以下PATH<br><img src="/images/nginx/nginx-path.png" alt="avatar"></li>
 <li>source /etc/profile    让配置文件重新生效一下</li>
 </ol>
 <h4 id="nginx命令不生效"><a href="#nginx命令不生效" class="headerlink" title="nginx命令不生效"></a>nginx命令不生效</h4><ol>
@@ -449,7 +449,7 @@
 </ol>
 <h4 id="开启防火墙的端口号"><a href="#开启防火墙的端口号" class="headerlink" title="开启防火墙的端口号"></a>开启防火墙的端口号</h4><ol>
 <li>vi /etc/sysconfig/iptables  </li>
-<li>添加允许8088端口号出站 ,如下图<br><img src="/images/nginx/iptables9301120.png" alt="avatar"></li>
+<li>添加允许8088端口号出站 ,如下图<br><img src="/images/nginx/iptables.png" alt="avatar"></li>
 <li>service iptables restart  //重启防火墙</li>
 </ol>
 <h4 id="centos-命令不能用-command-not-found"><a href="#centos-命令不能用-command-not-found" class="headerlink" title="centos 命令不能用 command not found"></a>centos 命令不能用 command not found</h4><ol>
