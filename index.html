@@ -284,6 +284,136 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zouyu01-sz.github.io/2019/10/08/layout/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Learn">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Learn个人博客-分享">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/08/layout/" itemprop="url">[layout]</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-08T10:15:32+08:00">
+                2019-10-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/10/08/layout/" class="leancloud_visitors" data-flag-title="[layout]">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://zouyu01-sz.github.io/2019/05/01/linux下Mysql安装使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1596,7 +1726,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zouyu01-sz.github.io/2017/10/23/Vue性能优化/">
+    <link itemprop="mainEntityOfPage" href="http://zouyu01-sz.github.io/2018/03/08/nodejs微信支付之扫码支付/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Learn">
@@ -1615,7 +1745,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/23/Vue性能优化/" itemprop="url">Vue性能优化</a></h1>
+                <a class="post-title-link" href="/2018/03/08/nodejs微信支付之扫码支付/" itemprop="url">nodejs微信支付之扫码支付</a></h1>
         
 
         <div class="post-meta">
@@ -1627,8 +1757,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T10:28:54+08:00">
-                2017-10-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-08T10:15:42+08:00">
+                2018-03-08
               </time>
             
 
@@ -1650,8 +1780,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index">
-                    <span itemprop="name">Vue</span>
+                  <a href="/categories/微信支付/" itemprop="url" rel="index">
+                    <span itemprop="name">微信支付</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/微信支付/node/" itemprop="url" rel="index">
+                    <span itemprop="name">node</span>
                   </a>
                 </span>
 
@@ -1667,7 +1808,7 @@
 
           
           
-             <span id="/2017/10/23/Vue性能优化/" class="leancloud_visitors" data-flag-title="Vue性能优化">
+             <span id="/2018/03/08/nodejs微信支付之扫码支付/" class="leancloud_visitors" data-flag-title="nodejs微信支付之扫码支付">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1699,203 +1840,41 @@
 
       
         
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><hr>
-Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前端开发中最脏最累的 DOM 操作部分， 我们不再需要去考虑如何操作 DOM 以及如何最高效地操作 DOM；但 Vue 项目中仍然存在项目首屏优化、Webpack 编译配置优化等问题，所以我们仍然需要去关注 Vue 项目性能方面的优化，使项目具有更高效的性能、更好的用户体验。本文是作者通过实际项目的优化实践进行总结而来，希望读者读完本文，有一定的启发思考，从而对自己的项目进行优化起到帮助。本文内容分为以下三部分组成：
-
-<ol>
-<li>Vue 代码层面的优化；</li>
-<li>webpack 配置层面的优化；</li>
-<li>基础的 Web 技术层面的优化。</li></ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/23/Vue性能优化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zouyu01-sz.github.io/2017/09/29/vue开源项目集合/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Learn">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Learn个人博客-分享">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/29/vue开源项目集合/" itemprop="url">vue开源项目集合</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-29T16:38:15+08:00">
-                2017-09-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index">
-                    <span itemprop="name">Vue</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2017/09/29/vue开源项目集合/" class="leancloud_visitors" data-flag-title="vue开源项目集合">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h4 id="UI组件"><a href="#UI组件" class="headerlink" title="UI组件"></a>UI组件</h4><ol>
-<li><a href="https://element.eleme.cn/#/zh-CN/component/installation" target="_blank" rel="noopener">element</a> 饿了么出品的Vue2的web UI工具套件</li>
-<li><a href="https://doc.vux.li/zh-CN/" target="_blank" rel="noopener">Vux</a>  基于Vue和WeUI的组件库</li>
-<li><a href="https://www.iviewui.com/docs/guide/install" target="_blank" rel="noopener">iview</a>   基于 Vuejs 的开源 UI 组件库</li>
-<li><a href="http://mint-ui.github.io/docs/#/" target="_blank" rel="noopener">mint-ui</a>   Vue 2的移动UI元素</li>
-<li><a href="https://github.com/museui/muse-ui" target="_blank" rel="noopener">muse-ui</a>  三端样式一致的响应式 UI 库</li>
-<li><a href="https://vuematerial.io/components/chips" target="_blank" rel="noopener">vue-material</a> 通过Vue Material和Vue 2建立精美的app应用</li>
-<li><a href="https://github.com/vuetifyjs/vuetify" target="_blank" rel="noopener">vuetify</a> 为移动而生的Vue JS 2组件框架</li>
-<li><a href="https://github.com/JosephusPaye/Keen-UI" target="_blank" rel="noopener">Keen-UI</a> - 轻量级的基本UI组件合集</li>
-<li><a href="https://github.com/shentao/vue-multiselect" target="_blank" rel="noopener">vue-multiselect</a> - Vue.js选择框解决方案</li>
-<li><a href="https://github.com/egoist/eme" target="_blank" rel="noopener">eme</a> - 优雅的Markdown编辑器</li>
-<li><a href="https://github.com/pi0/bootstrap-vue" target="_blank" rel="noopener">bootstrap-vue</a> 应用于Vuejs2的Twitter的Bootstrap 4组件</li>
-<li><a href="https://github.com/David-Desmaisons/Vue.Draggable" target="_blank" rel="noopener">Vue.Draggable</a> - 实现拖放和视图模型数组同步</li>
-<li><a href="https://github.com/Zulko/eagle.js" target="_blank" rel="noopener">eagle.js</a> - hacker的幻灯片演示框架</li>
-<li><a href="https://github.com/surmon-china/vue-awesome-swiper" target="_blank" rel="noopener">vue-awesome-swiper</a> - vue.js触摸滑动组件</li>
-<li><a href="https://github.com/ratiw/vue-table" target="_blank" rel="noopener">vue-table</a> - 简化数据表格</li>
-<li><a href="https://github.com/Coffcer/vue-chat" target="_blank" rel="noopener">vue-chat</a> - vuejs和vuex及webpack的聊天示例</li>
-<li><a href="https://chenz24.github.io/vue-blu/#/" target="_blank" rel="noopener">vue-blu</a> 帮助你轻松创建web应用</li>
-<li><a href="https://github.com/OYsun/VueCircleMenu" target="_blank" rel="noopener">VueCircleMenu</a> - 漂亮的vue圆环菜单</li>
-<li><a href="https://github.com/ElemeFE/vue-infinite-scroll" target="_blank" rel="noopener">vue-infinite-scroll</a> - VueJS的无限滚动指令</li>
-<li><a href="https://github.com/buefy/buefy" target="_blank" rel="noopener">buefy</a> - 响应式UI组件轻量级库</li>
-<li><a href="https://github.com/FE-Driver/vue-beauty" target="_blank" rel="noopener">vue-beauty</a> - 由vue和ant design创建的优美UI组件</li>
-<li><a href="https://github.com/MopTym/vue-waterfall" target="_blank" rel="noopener">vue-waterfall</a> - Vue.js的瀑布布局组件</li>
-<li><a href="https://github.com/luojilab/radon-ui" target="_blank" rel="noopener">radon-ui</a> - 快速开发产品的Vue组件库</li>
-<li><a href="https://github.com/JosephSmith127/vue-loop" target="_blank" rel="noopener">vue-loop</a> - 无限的内容循环</li>
-<li><a href="https://github.com/apertureless/vue-chartjs" target="_blank" rel="noopener">vue-chartjs</a> - vue中的Chartjs的封装</li>
+            <h4 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h4><ul>
+<li>nodejs v8.1.0</li>
+<li>egg v1.1.0</li>
+</ul>
+<h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ol>
+<li>微信公众号-appid</li>
+<li>微信商户号-mch_id</li>
+<li>key值(签名算法所需,其实就是一个32位的密码，可以用md5生成一个)(key设置路径：微信商户平台(pay.weixin.qq.com)–&gt;账户设置–&gt;API安全–&gt;密钥设置)</li>
 </ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/29/vue开源项目集合/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+<h4 id="扫码支付-统一下单"><a href="#扫码支付-统一下单" class="headerlink" title="扫码支付-统一下单"></a>扫码支付-统一下单</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">let MD5 = require(&apos;md5&apos;),</span><br><span class="line">   xml2js = require(&apos;xml2js&apos;),</span><br><span class="line">      url = &quot;https://api.mch.weixin.qq.com/pay/unifiedorder&quot;,// 下单请求地址</span><br><span class="line">   appid = &apos;公众号id&apos;,</span><br><span class="line">      mch_id = &apos;微信商户号&apos;；</span><br><span class="line">   notify_url = &apos;回调地址&apos;,</span><br><span class="line">   out_trade_no = &apos;自己设置的订单号&apos;,// 微信会有自己订单号、我们自己的系统需要设置自己的订单号</span><br><span class="line">   total_fee = &apos;订单金额&apos;,// 注意，单位为分</span><br><span class="line">   body = &apos;商品简单描述&apos;, </span><br><span class="line">   trade_type = &apos;NATIVE&apos;,// 交易类型，JSAPI--公众号支付、NATIVE--原生扫码支付、APP--app支付</span><br><span class="line">   nonce_str = moment().format(&apos;YYYYMMDDHHmmssSSS&apos;),// 随机字符串32位以下</span><br><span class="line">   stringA = `appid=$&#123;公众号id&#125;&amp;body=$&#123;body&#125;&amp;mch_id=$&#123;微信商户号&#125;&amp;nonce_str=$&#123;nonce_str&#125;&amp;notify_url=$&#123;</span><br><span class="line">notify_url&#125;&amp;out_trade_no=$&#123;out_trade_no&#125;&amp;spbill_create_ip=$&#123;ctx.request.ip&#125;&amp;total_fee=$&#123;total_fee&#125;&amp;trade_type=$&#123;trade_type&#125;`,</span><br><span class="line">   stringSignTemp = stringA + &quot;&amp;key=xxxxxxxxxxxxxxxxx&quot;, //注：key为商户平台设置的密钥key</span><br><span class="line">   sign = MD5(stringSignTemp).toUpperCase();  //注：MD5签名方式</span><br></pre></td></tr></table></figure>
+
+<p>以上就是我们所需要的一些参数<br>签名生成算法见<a href="https://pay.weixin.qq.com/wiki/doc/api/native.php?chapter=4_3" target="_blank" rel="noopener"><strong>微信官方</strong></a><br>spbill_create_ip 是 终端ip地址</p>
+<p>下面把所有的参数拼接成xml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">const formData = &quot;&lt;xml&gt;&quot;;</span><br><span class="line">       formData += &quot;&lt;appid&gt;&quot; + appid + &quot;&lt;/appid&gt;&quot;; //appid</span><br><span class="line">       formData += &quot;&lt;body&gt;&quot; + body + &quot;&lt;/body&gt;&quot;; //商品或支付单简要描述</span><br><span class="line">       formData += &quot;&lt;mch_id&gt;&quot; + mch_id + &quot;&lt;/mch_id&gt;&quot;; //商户号</span><br><span class="line">       formData += &quot;&lt;nonce_str&gt;&quot; + nonce_str + &quot;&lt;/nonce_str&gt;&quot;; //随机字符串，不长于32位</span><br><span class="line">       formData += &quot;&lt;notify_url&gt;&quot; + notify_url + &quot;&lt;/notify_url&gt;&quot;; //支付成功后微信服务器通过POST请求通知这个地址</span><br><span class="line">       formData += &quot;&lt;out_trade_no&gt;&quot; + out_trade_no + &quot;&lt;/out_trade_no&gt;&quot;; //订单号</span><br><span class="line">       formData += &quot;&lt;total_fee&gt;&quot; + total_fee + &quot;&lt;/total_fee&gt;&quot;; //金额</span><br><span class="line">       formData += &quot;&lt;spbill_create_ip&gt;&quot; + ctx.request.ip + &quot;&lt;/spbill_create_ip&gt;&quot;; //ip</span><br><span class="line">       formData += &quot;&lt;trade_type&gt;NATIVE&lt;/trade_type&gt;&quot;; //NATIVE会返回code_url ，JSAPI不会返回</span><br><span class="line">       formData += &quot;&lt;sign&gt;&quot; + sign + &quot;&lt;/sign&gt;&quot;;</span><br><span class="line">       formData += &quot;&lt;/xml&gt;&quot;;</span><br><span class="line">   // 这里使用了egg里面请求的方式</span><br><span class="line">const resultData = yield ctx.curl(url, &#123;</span><br><span class="line">           method: &apos;POST&apos;,</span><br><span class="line">           content: formData,</span><br><span class="line">           headers: &#123;</span><br><span class="line">               &apos;content-type&apos;: &apos;text/html&apos;,</span><br><span class="line">           &#125;,</span><br><span class="line">       &#125;);</span><br><span class="line"></span><br><span class="line">// xml转json格式</span><br><span class="line">xml2js.parseString(resultData.data, function (err, json) &#123;</span><br><span class="line">	if (err) &#123;</span><br><span class="line">		new Error(&quot;解析xml报错&quot;)</span><br><span class="line">	&#125; else &#123;</span><br><span class="line">		var result = formMessage(json.xml); // 转换成正常的json 数据</span><br><span class="line">		console.log(result) //打印出返回的结果</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line">   var formMessage = function (result) &#123;</span><br><span class="line">       var message = &#123;&#125;;</span><br><span class="line">       if (typeof result === &apos;object&apos;) &#123;</span><br><span class="line">           var keys = Object.keys(result);</span><br><span class="line">           for (var i = 0; i &lt; keys.length; i++) &#123;</span><br><span class="line">               var item = result[keys[i]];</span><br><span class="line">               var key = keys[i];</span><br><span class="line">               if (!(item instanceof Array) || item.length === 0) &#123;</span><br><span class="line">                   continue;</span><br><span class="line">               &#125;</span><br><span class="line">               if (item.length === 1) &#123;</span><br><span class="line">                   var val = item[0];</span><br><span class="line">                   if (typeof val === &apos;object&apos;) &#123;</span><br><span class="line">                       message[key] = formMessage(val);</span><br><span class="line">                   &#125; else &#123;</span><br><span class="line">                       message[key] = (val || &apos;&apos;).trim();</span><br><span class="line">                   &#125;</span><br><span class="line">               &#125; else &#123;</span><br><span class="line">                   message[key] = [];</span><br><span class="line">                   for (var j = 0, k = item.length; j &lt; k; j++) &#123;</span><br><span class="line">                       message[key].push(formMessage(itemp[j]));</span><br><span class="line">                   &#125;</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       return message;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面使用了egg的请求方式，node可以使用request</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var request = require(&apos;request&apos;);</span><br><span class="line">request(&#123;</span><br><span class="line">    url: url,</span><br><span class="line">    method: &quot;POST&quot;,</span><br><span class="line">    body: formData</span><br><span class="line">&#125;, function(error, response, body) &#123;</span><br><span class="line">    if (!error &amp;&amp; response.statusCode == 200) &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>如果请求成功会最终返回一个xml,然后我们进行解析成json的格式,里面会有一个code_url和out_trade_no,我们需要把这两个返回给前端，然后通过生成二维码展示给用户扫码，完成支付</p>
+<h4 id="监听支付是否成功"><a href="#监听支付是否成功" class="headerlink" title="监听支付是否成功"></a>监听支付是否成功</h4><p>上面操作完成之后，我们需要知道用户是否完成支付，因为用户会停留在该页面，我们需要在用户付完款之后，通知用户支付成功。<br>首先，用户发起支付的时候我们会生成二维码，让用户完成扫码支付，我们还要做的是，开一个定时器，每隔一段时间去发送一个请求，这个时候，我们node后台就需要写一个查询订单的接口，之前我们拿到了out_trade_no，也就是我们系统内部的订单号，我们把这个数据发送给后台查询订单的接口，然后后台接收到之后会请求微信的查询接口地址<a href="https://api.mch.weixin.qq.com/pay/orderquery" target="_blank" rel="noopener">https://api.mch.weixin.qq.com/pay/orderquery</a>,流程跟上面一样，只是接口地址和微信返回的xml不一样而已，返回的字段会有一个状态即SUCCESS和NOTPAY，我们可以通过判断是否支付返回给前端，成功之后提示给用户支付成功，关闭定时器。</p>
+<h4 id="回调地址"><a href="#回调地址" class="headerlink" title="回调地址"></a>回调地址</h4><p>这个是非常重要的一环，大部分的操作其实在上面就可以完成，但是有特殊的情况，比如用户电脑断网发送不了请求，但是手机付款了，这就会导致我们记录不到用户支付的信息。这个时候回调地址就很重要了</p>
+<h4 id="设置回调地址"><a href="#设置回调地址" class="headerlink" title="设置回调地址"></a>设置回调地址</h4><ol>
+<li>微信商户中心-&gt;产品中心-&gt;开发配置-&gt;扫码支付</li>
+<li>之后我们需要做的是后端用post来接收微信发送的异步回调信息，也是xml的格式，这里注意，如果不支持接收xml，可能会得到空的数据<br>这里还需要注意的是，我们在保存用户支付信息的同时，得先查改订单是否支付，以免重复操作，可能会插入多条记录的情况</li>
+</ol>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>微信扫码支付坑还是有的，如果你是第一次摸索的话，下面罗列一下需要注意的地方</p>
+<ol>
+<li>签名算法要写正确，不然是不会成功的，要拼接正确才行</li>
+<li>微信返回的是xml格式的数据，我们得通过插件转成json，这样才方便获取数据</li>
+<li>返回的code_url要给前端生成二维码用，然后需要开一个定时器查询该订单是否完成支付，最终通知用户结果</li>
+<li>回调地址很重要，我们后端需要post接收微信返回的回调信息，然后保存信息，不过在保存用户支付信息的之前，我们得知道该订单是否已经保存过，以免重复添加。还有就是返回的是xml的数据，后端一定要保证能够接收得到，按照正常的方式是接收不了的，得额外设置。</li>
+</ol>
+
+          
         
       
     </div>
@@ -1932,6 +1911,10 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1977,7 +1960,7 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1988,7 +1971,7 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1999,7 +1982,7 @@ Vue 框架通过数据双向绑定和虚拟 DOM 技术，帮我们处理了前�
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
